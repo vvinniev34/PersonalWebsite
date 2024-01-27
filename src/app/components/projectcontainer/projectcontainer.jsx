@@ -1,9 +1,10 @@
 import React from "react";
 
-const ProjectContainer = () => {
+const ProjectContainer = (props) => {
+    const { title, description ="" } = props;
     return (
-        <div className="bg-white p-5 rounded-lg mb-5 ml-5 mr-5 shadow-md  w-120">
-            Project
+        <div className="bg-white rounded-lg shadow-md flex justify-center align-center w-full h-80">
+            <h3>Project {title}</h3>
         </div>
     );
 }

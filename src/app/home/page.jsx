@@ -9,7 +9,7 @@ import "../globals.css"
 const HomePage = () => {
   const title = "Home";
   const introduction = 
-    <div className="relative w-full">
+    <div className="flex w-full">
       <div className="flex w-auto w-[50%]">
         <div className="handwave pt-5 pr-5 w-auto h-16">👋</div>
         <div className="whitespace-no-wrap">
@@ -17,8 +17,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="absolute right-0 top-[-50%] w-[50%] h-[150%]">
-        {/* <BearToast/> */}
+      <div className="right-0 top-[-50%] w-[50%] h-[150%]">
+        <BearToast/>
       </div>
     </div>
   
