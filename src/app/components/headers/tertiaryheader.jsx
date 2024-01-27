@@ -1,13 +1,13 @@
 
-export default function SubHeader(props) {
+export default function TertiaryHeader(props) {
     const { title, description = "", centered = false } = props
     if (!title) {
       return null
     }
     return (
-      <div className={`${centered ? 'text-center' : 'w-5/6 lg:w-3/5'} pb-5`}>
+      <div className={`${centered ? 'text-center' : 'w-full'} pb-20`}>
         {title && (
-          <div className="text-2xl font-extrabold tracking-tight md:text-4xl">
+          <div className="text-xl font-extrabold tracking-tight md:text-2xl">
             {title}
           </div>
         )}

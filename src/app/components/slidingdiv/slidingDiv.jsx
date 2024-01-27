@@ -11,7 +11,7 @@ const SlidingDiv = (props) => {
         <div 
             ref={ref}
             className={`${inView ? (reverse ? "transition-transform-lr flex flex-row-reverse" : "transition-transform-rl") :
-                "transform translate-x-full duration-1000 ease-out"} rounded-lg border-2 p-5 m-5`}
+                "transform translate-x-full duration-1000 ease-out"} rounded-lg p-5 m-5 bg-white shadow-md`}
         >
             {children}
         </div>
