@@ -5,7 +5,8 @@ export default function SubHeader(props) {
       return null
     }
     return (
-      <div className={`${centered ? 'text-center' : 'w-5/6 lg:w-3/5'} pb-5`}>
+      // <div className={`${centered ? 'text-center' : 'w-5/6 lg:w-3/5'} pb-5`}>
+        <div className={`${centered ? 'text-center' : 'w-full'} pb-5`}>
         {title && (
           <div className="text-2xl font-extrabold tracking-tight md:text-4xl">
             {title}

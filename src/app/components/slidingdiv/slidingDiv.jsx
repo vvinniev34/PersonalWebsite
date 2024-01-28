@@ -10,8 +10,8 @@ const SlidingDiv = (props) => {
     return (
         <div 
             ref={ref}
-            className={`${inView ? (reverse ? "transition-transform-lr flex flex-row-reverse" : "transition-transform-rl") :
-                "transform translate-x-full duration-1000 ease-out"} rounded-lg p-5 m-5 bg-white shadow-md`}
+            className={`flex ${inView ? (reverse ? "transition-transform-lr flex-row-reverse" : "transition-transform-rl") :
+                "transform translate-x-full duration-1000 ease-out"} rounded-lg p-5 m-10 bg-white shadow-md`}
         >
             {children}
         </div>
