@@ -1,6 +1,7 @@
 "use client"
 import React, { useCallback, useEffect, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import { PrevButton, NextButton } from './arrows.jsx'
 import { flushSync } from 'react-dom'
 import styles from './carousel.module.css'
 
@@ -79,8 +80,10 @@ const Carousel = (props) => {
               ))}
             </div>
           </div>
-          <button className={styles.embla__prev} onClick={scrollPrev}>Prev</button>
-          <button className={styles.embla__next} onClick={scrollNext}>Next</button>
+          <div className={styles.embla__buttons}>
+            <PrevButton onClick={scrollPrev}/>
+            <NextButton onClick={scrollNext}/>
+          </div>
         </div>
       )
 };

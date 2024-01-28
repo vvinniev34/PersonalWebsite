@@ -6,7 +6,7 @@ const ProjectContainer = (props) => {
     const tempdescription = "There is no harm in dreaming of becoming the world's best player. It is all about trying to be the best. I will keep working hard to achieve it but it is within my capabilities."
     return (
         <div className="bg-white rounded-lg shadow-md flex w-full h-80">
-            <div className="w-[40%] m-[2.5%] bg-blue-400 overflow-hidden rounded-md">
+            <div className="w-[40%] m-[2.5%] bg-offwhite overflow-hidden rounded-md zoom-on-hover">
                 {image ? <img src={image} alt="Reddit Image" className="h-[100%] object-cover"></img> : "Image"}
             </div>
             <div className="w-[55%] mr-[2.5%] mt-[2.5%] mb-[2.5%]">

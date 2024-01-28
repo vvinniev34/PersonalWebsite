@@ -4,15 +4,18 @@
     --slide-height: 19rem;
     padding: 1.6rem;
 }
+
 .embla__viewport {
     /* overflow: hidden; */
 }
+
 .embla__container {
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
     margin-left: calc(var(--slide-spacing) * -1);
 }
+
 .embla__slide {
     flex: 0 0 var(--slide-size);
     min-width: 0;
@@ -61,7 +64,31 @@
     bottom: 0;
 }
 
-.embla__prev, .embla__next {
-    padding: 20px;
-    margin:5px
+.embla__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.embla__button path {
+    fill: black;
+    transition: fill 0.3s ease; 
+}
+
+.embla__button:hover path {
+    fill: #9ca3af
+}
+
+.embla__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5%;
+}
+
+.embla__button__svg {
+    width: 65%;
+    height: 65%;
 }

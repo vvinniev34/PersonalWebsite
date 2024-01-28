@@ -18,12 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background: antiquewhite
 }
 
 @layer utilities {
@@ -68,15 +69,23 @@ body {
 
 @keyframes slideLR {
   from {
-    transform: translateX(-100%);
+      transform: translateX(-100%);
   }
   to {
-    transform: translateX(0);
+      transform: translateX(0);
   }
 }
 
 .transition-transform-lr {
   animation: slideLR 1s forwards;
+}
+
+.zoom-on-hover {
+  transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05);
 }
 
 @keyframes underline {

@@ -73,7 +73,8 @@ export default function Particles({
 
 	const circleParams = () => {
 		const x = Math.floor(Math.random() * canvasSize.current.w);
-		const y = Math.floor((1 - Math.sqrt(Math.random())) * canvasSize.current.h);
+		// const y = Math.floor((1 - Math.sqrt(Math.random())) * canvasSize.current.h);
+		const y = Math.floor((1 - Math.random()) * canvasSize.current.h);
 		const translateX = 0;
 		const translateY = 0;
 		const size = Math.floor(Math.random() * 2) + 0.5;
@@ -81,7 +82,8 @@ export default function Particles({
 		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.2).toFixed(1));
 		const dx = (Math.random() - 0.5) * 0.2;
 		const dy = (Math.random() - 0.5) * 0.2;
-		const magnetism = 0.1 + Math.random() * 4;
+		// const magnetism = 0.1 + Math.random() * 4;
+		const magnetism = 0.1 + Math.random() * 8;
 		return {
 			x,
 			y,

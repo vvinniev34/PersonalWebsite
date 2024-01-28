@@ -17,8 +17,7 @@ const ProjectPage = () => {
         <main className="flex min-h-screen flex-col items-center justify-between p-20 pt-5">
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
-                    {/* <div className="w-auto h-auto bg-cover bg-center pt-5" style={{ backgroundImage: `url(${background})` }}> */}
-                    <div className="bg-white w-auto h-auto pt-5">
+                    <div className="w-auto h-auto pt-5">
                         <Header centered={true} title={title} description={description}></Header>
                     </div>
 
@@ -26,8 +25,7 @@ const ProjectPage = () => {
 
                     <SubHeader title={"Ongoing"}></SubHeader>
 
-                    {/* <div className="w-full rounded-lg bg-gradient-radial from-transparent via-slate-100 to-slate-150"> */}
-                    <div className="w-full rounded-lg bg-gray-100 shadow-lg">
+                    <div className="w-full rounded-lg shadow-lg">
                         <Carousel projectList={projects}></Carousel>
                     </div>
                 </div>
