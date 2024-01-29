@@ -1,6 +1,6 @@
 
 export default function SubHeader(props) {
-    const { title, description = "", centered = false } = props
+    const { title, description = "", centered = false, color = "black" } = props
     if (!title) {
       return null
     }
@@ -8,7 +8,7 @@ export default function SubHeader(props) {
       // <div className={`${centered ? 'text-center' : 'w-5/6 lg:w-3/5'} pb-5`}>
         <div className={`${centered ? 'text-center' : 'w-full'} pb-5`}>
         {title && (
-          <div className="text-2xl font-extrabold tracking-tight md:text-4xl">
+          <div className={`text-2xl font-extrabold tracking-tight md:text-4xl`} style={{color:color}}>
             {title}
           </div>
         )}

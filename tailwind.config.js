@@ -13,7 +13,15 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 	  colors: {
-		"offwhite": "#f6f2ee"
+		"offwhite": "#f6f2ee",
+		"darkorange": "#ff8c00",
+		"blueviolet": "#8a2be2",
+		"cadetblue": "#5f9ea0",
+		"lightsalmon": "#ffa07a",
+		"indianred": "#cd5c5c",
+		"deeppink": "#ff1493",
+		"darkcyan": "#008b8b",
+		"chocolate": "#7B3F00",
 	  },
       animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",
