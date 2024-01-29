@@ -22,6 +22,7 @@ module.exports = {
 		"deeppink": "#ff1493",
 		"darkcyan": "#008b8b",
 		"chocolate": "#7B3F00",
+		"limegreen": "#32CD32",
 	  },
       animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",
