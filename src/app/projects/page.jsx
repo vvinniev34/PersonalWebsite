@@ -39,7 +39,7 @@ const ProjectPage = () => {
     ]
     
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-20 pt-5">
+        <main className="flex min-h-screen flex-col items-center justify-between p-20">
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
                     <div className="w-auto h-auto pt-5">

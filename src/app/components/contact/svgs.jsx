@@ -30,9 +30,6 @@ export function MailSVG(props) {
 
 export function UpRightSVG(props) {
 
-    // return (
-    //     <svg xmlns="http://www.w3.org/2000/svg" width="10%" viewBox="0 0 32 32"><path d="M31 0H15v2h13.59L.29 30.29 1.7 31.7 30 3.41V16h2V1a1 1 0 0 0-1-1z" data-name="5-Arrow Up"/></svg>
-    // )
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
     );

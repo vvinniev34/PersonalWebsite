@@ -15,7 +15,7 @@ const AboutPage = () => {
   const currentlyDoing = "well, so far feeling very good. I'm so proud to make this big decision in my life in football. As you mentioned before, in Europe, my work, it's done. I won everything. I played in the most important clubs in Europe. And for me now is a new challenge."
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 pt-5">
+    <main className="flex min-h-screen flex-col items-center justify-between p-20">
       <div className="flex space-y-20 w-full">
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           <div className="w-full h-auto pt-5">
