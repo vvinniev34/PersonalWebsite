@@ -20,21 +20,25 @@ const ProjectPage = () => {
             title={"RedditReels"} 
             image="projects/reddit.jpg"
             color={colors[5]}
+            description={<div>Automatic short-form video content generator and uploader for TikTok, YouTube Shorts, and Instagram Reels.<br/>On pace for 30,000,000 annual views.</div>}
         />, 
         <ProjectContainer 
             title={"User-Level Thread Library"}
             svg={<StackSVG/>}
             color={colors[5]}
+            description={<div>Designed a user-level thread library and API from scratch, allowing for concurrent execution of multiple threads.<br/>Contains vital functions such as thread creation, scheduling, synchronization, and termination, to enable efficient resource utilization and task parallelism.</div>}
         />, 
         <ProjectContainer 
             title={"VoiceNotes"}
             image="projects/voicenotes.jpg"
             color={colors[5]}
+            description={<div></div>}
         />, 
         <ProjectContainer 
             title={"Cluster Analysis Tool"} 
             image="projects/group.png"
             color={colors[5]}
+            description={<div></div>}
         />
     ]
     
