@@ -45,17 +45,19 @@ const ProjectPage = () => {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-20">
             <div className="flex space-y-20 w-full">
-                <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
+                <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
                     <div className="w-auto h-auto pt-5">
                         <Header centered={true} title={title} description={description} color={brightcolors[1]}></Header>
                     </div>
 
                     <PageDivider marginBottom={2.5}></PageDivider>
 
-                    <SubHeader title={"Ongoing"} color={colors[4]}></SubHeader>
+                    <div className="w-[90%] overflow-hidden">
+                        <SubHeader title={"Ongoing"} color={colors[4]}></SubHeader>
 
-                    <div className="w-full rounded-lg shadow-lg">
-                        <Carousel projectList={projects}></Carousel>
+                        <div className="w-full rounded-lg shadow-lg">
+                            <Carousel projectList={projects}></Carousel>
+                        </div>
                     </div>
                 </div>
             </div>

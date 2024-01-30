@@ -23,7 +23,8 @@ const AboutPage = () => {
           </div>
 
 
-          <PageDivider marginBottom={2.5}></PageDivider>
+          {/* <PageDivider marginBottom={2.5}></PageDivider> */}
+          <PageDivider marginBottom={0}></PageDivider>
 
           <div className="w-[90%]">
             <NoCardSlidingDiv>
