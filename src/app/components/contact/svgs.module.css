@@ -1,0 +1,8 @@
+.contactSVG {
+    width:10%;
+    cursor:pointer
+}
+
+.contactSVG:hover path {
+    fill:gray
+}

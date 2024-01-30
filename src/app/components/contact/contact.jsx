@@ -3,6 +3,7 @@ import React from 'react';
 import SubHeader from "../headers/subheader"
 import SecondaryPageDivider from "../pagedivider/secondarypagedivider.jsx"
 import { GithubSVG, LinkedInSVG, MailSVG, InstagramSVG, UpRightSVG } from "../contact/svgs.jsx"
+import styles from "./svgs.module.css"
 
 const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
 const brightcolors = ["blueviolet", "deeppink"]
@@ -31,7 +32,7 @@ const Contact = () => {
               <div className="flex width" style={{width:"40%"}}>
                 <div className="flex flex-col ">
                   <div className="flex m-5" style={{width:"90%"}}>
-                    <div style={{width:"10%", cursor:"pointer"}} onClick={handleGithubClick}>
+                    <div className={styles.contactSVG} onClick={handleGithubClick}>
                         <GithubSVG/>
                     </div>
                     <div className="flex justify-center items-center" style={{width:"75%"}}>
@@ -39,7 +40,7 @@ const Contact = () => {
                             GitHub
                         </div>
                     </div>
-                    <div style={{width:"10%", cursor:"pointer"}} onClick={handleGithubClick}>
+                    <div className={styles.contactSVG} onClick={handleGithubClick}>
                         <UpRightSVG/>
                     </div>
                   </div>
@@ -47,7 +48,7 @@ const Contact = () => {
                   <SecondaryPageDivider/>
                   
                   <div className="flex m-5" style={{width:"90%"}}>
-                    <div style={{width:"10%", cursor:"pointer"}} onClick={handleLinkedInClick}>
+                    <div className={styles.contactSVG} onClick={handleLinkedInClick}>
                         <LinkedInSVG/>
                     </div>
                     <div className="flex justify-center items-center" style={{width:"75%"}}>
@@ -55,7 +56,7 @@ const Contact = () => {
                             LinkedIn
                         </div>
                     </div>
-                    <div style={{width:"10%", cursor:"pointer"}} onClick={handleLinkedInClick}>
+                    <div className={styles.contactSVG} onClick={handleLinkedInClick}>
                         <UpRightSVG/>
                     </div>
                   </div>
@@ -63,7 +64,7 @@ const Contact = () => {
                   <SecondaryPageDivider/>
 
                   <div className="flex m-5" style={{width:"90%"}}>
-                    <div style={{width:"10%", cursor:"pointer"}} onClick={handleEmailClick}>
+                    <div className={styles.contactSVG} onClick={handleEmailClick}>
                         <MailSVG/>
                     </div>
                     <div className="flex justify-center items-center" style={{width:"75%"}}>
@@ -71,7 +72,7 @@ const Contact = () => {
                             {email}
                         </div>
                     </div>
-                    <div style={{width:"10%", cursor:"pointer"}} onClick={handleEmailClick}>
+                    <div className={styles.contactSVG} onClick={handleEmailClick}>
                         <UpRightSVG/>
                     </div>
                   </div>
@@ -79,7 +80,7 @@ const Contact = () => {
                   <SecondaryPageDivider/>
 
                   <div className="flex m-5" style={{width:"90%"}}>
-                    <div style={{width:"10%", cursor:"pointer"}}>
+                    <div className={styles.contactSVG}>
                         <InstagramSVG/>
                     </div>
                     <div className="flex justify-center items-center" style={{width:"75%"}}>
@@ -87,7 +88,7 @@ const Contact = () => {
                             Instagram
                         </div>
                     </div>
-                    <div style={{width:"10%", cursor:"pointer"}}>
+                    <div className={styles.contactSVG}>
                         <UpRightSVG/>
                     </div>
                   </div>
