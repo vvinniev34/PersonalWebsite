@@ -5,7 +5,7 @@ const ProjectContainer = (props) => {
     const { title, description = "", image = "", color = "black", svg = null } = props;
     
     return (
-        <div className="bg-white rounded-lg shadow-md flex w-full h-80">
+        <div className="bg-offwhite rounded-lg shadow-md flex w-full h-80">
             <div className="w-[40%] m-[2.5%] bg-offwhite overflow-hidden rounded-md zoom-on-hover">
                 {image ? <img src={image} alt="Reddit Image" className="h-[100%] w-[100%] object-cover"/> :
                 (svg ? svg : "Image")}

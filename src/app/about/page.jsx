@@ -14,6 +14,31 @@ const AboutPage = () => {
   
   const currentlyDoing = "well, so far feeling very good. I'm so proud to make this big decision in my life in football. As you mentioned before, in Europe, my work, it's done. I won everything. I played in the most important clubs in Europe. And for me now is a new challenge."
   
+  function SlideIn(title, description, colorI, imgSrc, reverse=false, top=false, bottom=false) {
+    return (
+      <div 
+        className={`w-[100%] ${reverse ? "" : "bg-white"} rounded-lg flex items-center justify-center`} 
+        style={top ? {borderTopLeftRadius:0, borderTopRightRadius:0} : (bottom ? {borderBottomLeftRadius:0, borderBottomRightRadius:0} : {})}
+      >
+        <div className="w-[90%]">
+          <NoCardSlidingDiv reverse={reverse}>
+            <div className={`w-3/12 ${reverse ? "ml-[8.33%]" : "mr-[8.33%]"}`}>
+              <SubHeader 
+                title={title} 
+                description={description} 
+                color={colors[colorI]}
+              />
+            </div>
+            <div className="w-8/12 m-0 bg-offwhite overflow-hidden rounded-lg zoom-on-hover">
+              <img src={imgSrc} alt="image" className="h-[100%] object-cover"/>
+              Image
+            </div>
+          </NoCardSlidingDiv>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-20">
       <div className="flex space-y-20 w-full">
@@ -22,50 +47,13 @@ const AboutPage = () => {
             <Header centered={true} title={title} description={introduction} color={brightcolors[0]}></Header>
           </div>
 
-
           {/* <PageDivider marginBottom={2.5}></PageDivider> */}
           <PageDivider marginBottom={0}></PageDivider>
 
-          <div className="w-[90%]">
-            <NoCardSlidingDiv>
-                <div className="w-3/12 mr-[8.33%]">
-                  <SubHeader 
-                    title={"About Me"} 
-                    description={currentlyDoing} 
-                    color={colors[0]}
-                  />
-                </div>
-                <div className="w-8/12 m-0 bg-offwhite overflow-hidden rounded-lg zoom-on-hover">
-                  <img src="projects/reddit.jpg" alt="image" className="h-[100%] object-cover"/>
-                  Image
-                </div>
-            </NoCardSlidingDiv>
-            <NoCardSlidingDiv reverse={true}>
-                <div className="w-3/12 ml-[8.33%]">
-                  <SubHeader 
-                    title={"About Me"} 
-                    description={currentlyDoing} 
-                    color={colors[1]}
-                  />
-                </div>
-                <div className="w-8/12 m-0 bg-offwhite overflow-hidden rounded-lg zoom-on-hover">
-                  <img src="about/food.jpg" alt="image" className="h-[100%] object-cover"/>
-                  Image
-                </div>
-            </NoCardSlidingDiv>
-            <NoCardSlidingDiv>
-                <div className="w-3/12 mr-[8.33%]">
-                  <SubHeader 
-                    title={"Contact Information"} 
-                    description={<div>intargam.com<br/>github.com<br/>linkedin.com<br/>email</div>} 
-                    color={colors[2]}
-                  />
-                </div>
-                <div className="w-8/12 m-0 bg-offwhite overflow-hidden rounded-lg zoom-on-hover">
-                  <img src="projects/reddit.jpg" alt="image" className="h-[100%] object-cover"/>
-                  Image
-                </div>
-            </NoCardSlidingDiv>
+          <div className="w-[100%] flex flex-col items-center justify-center">
+              {SlideIn("About Me", currentlyDoing, 0, "projects/reddit.jpg", false, true, false)}
+              {SlideIn("About Me", currentlyDoing, 1, "about/food.jpg", true)}
+              {SlideIn("About Me", currentlyDoing, 2, "projects/reddit.jpg", false, false, true)}
           </div>
 
           <PageDivider marginBottom={2.5}></PageDivider>

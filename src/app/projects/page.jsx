@@ -50,13 +50,18 @@ const ProjectPage = () => {
                         <Header centered={true} title={title} description={description} color={brightcolors[1]}></Header>
                     </div>
 
-                    <PageDivider marginBottom={2.5}></PageDivider>
+                    <PageDivider marginBottom={0}></PageDivider>
 
-                    <div className="w-[90%] overflow-hidden">
-                        <SubHeader title={"Ongoing"} color={colors[4]}></SubHeader>
+                    <div 
+                        className="w-[100%] bg-white flex items-center justify-center rounded-lg p-8" 
+                        style={{paddingBottom:0,borderTopLeftRadius:0, borderTopRightRadius:0}}
+                    >
+                        <div className="w-[90%] overflow-hidden">
+                            <SubHeader title={"Ongoing"} color={colors[4]}></SubHeader>
 
-                        <div className="w-full rounded-lg shadow-lg">
-                            <Carousel projectList={projects}></Carousel>
+                            <div className="w-full rounded-lg shadow-lg">
+                                <Carousel projectList={projects}></Carousel>
+                            </div>
                         </div>
                     </div>
                 </div>
