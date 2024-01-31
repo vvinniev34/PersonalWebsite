@@ -40,7 +40,7 @@ const AboutPage = () => {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20">
+    <main className="flex min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
       <div className="flex space-y-20 w-full">
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           <div className="w-full h-auto pt-5">
@@ -57,8 +57,9 @@ const AboutPage = () => {
           </div>
 
           <PageDivider marginBottom={2.5}></PageDivider>
-
-          <Contact/>
+          <div className="" style={{width:"100%"}}> 
+            <Contact/>
+          </div>
         </div>
       </div>
     </main>

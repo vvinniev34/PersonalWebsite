@@ -29,71 +29,75 @@ const Contact = () => {
         <SubHeader 
             title="Contact"
             description={
-              <div className="flex width" style={{width:"40%"}}>
-                <div className="flex flex-col ">
-                  <div className="flex m-5" style={{width:"90%"}}>
-                    <div className={styles.contactSVG} onClick={handleGithubClick}>
-                        <GithubSVG/>
-                    </div>
-                    <div className="flex justify-center items-center" style={{width:"75%"}}>
-                        <div className="w-auto" style={{cursor:"pointer"}} onClick={handleGithubClick}>
-                            GitHub
+                <>
+                    <div className='font-semibold'>Let's connect</div>
+                    <div>Get in touch for opportunites or just to say hi! 👋</div>
+                    <div className="flex width" style={{width:"40%"}}>
+                        <div className="flex flex-col ">
+                        <div className="flex m-5" style={{width:"90%"}}>
+                            <div className={styles.contactSVG} onClick={handleGithubClick}>
+                                <GithubSVG/>
+                            </div>
+                            <div className="flex justify-center items-center" style={{width:"75%"}}>
+                                <div className="w-auto textHover" style={{cursor:"pointer"}} onClick={handleGithubClick}>
+                                    GitHub
+                                </div>
+                            </div>
+                            <div className={styles.contactSVG} onClick={handleGithubClick}>
+                                <UpRightSVG/>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.contactSVG} onClick={handleGithubClick}>
-                        <UpRightSVG/>
-                    </div>
-                  </div>
-                  
-                  <SecondaryPageDivider/>
-                  
-                  <div className="flex m-5" style={{width:"90%"}}>
-                    <div className={styles.contactSVG} onClick={handleLinkedInClick}>
-                        <LinkedInSVG/>
-                    </div>
-                    <div className="flex justify-center items-center" style={{width:"75%"}}>
-                        <div className="w-auto" style={{cursor:"pointer"}} onClick={handleLinkedInClick}>
-                            LinkedIn
+                        
+                        <SecondaryPageDivider/>
+                        
+                        <div className="flex m-5" style={{width:"90%"}}>
+                            <div className={styles.contactSVG} onClick={handleLinkedInClick}>
+                                <LinkedInSVG/>
+                            </div>
+                            <div className="flex justify-center items-center" style={{width:"75%"}}>
+                                <div className="w-auto textHover" style={{cursor:"pointer"}} onClick={handleLinkedInClick}>
+                                    LinkedIn
+                                </div>
+                            </div>
+                            <div className={styles.contactSVG} onClick={handleLinkedInClick}>
+                                <UpRightSVG/>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.contactSVG} onClick={handleLinkedInClick}>
-                        <UpRightSVG/>
-                    </div>
-                  </div>
-                  
-                  <SecondaryPageDivider/>
+                        
+                        <SecondaryPageDivider/>
 
-                  <div className="flex m-5" style={{width:"90%"}}>
-                    <div className={styles.contactSVG} onClick={handleEmailClick}>
-                        <MailSVG/>
-                    </div>
-                    <div className="flex justify-center items-center" style={{width:"75%"}}>
-                        <div className="w-auto" style={{cursor:"pointer"}} onClick={handleEmailClick}>
-                            {email}
+                        <div className="flex m-5" style={{width:"90%"}}>
+                            <div className={styles.contactSVG} onClick={handleEmailClick}>
+                                <MailSVG/>
+                            </div>
+                            <div className="flex justify-center items-center" style={{width:"75%"}}>
+                                <div className="w-auto textHover" style={{cursor:"pointer"}} onClick={handleEmailClick}>
+                                    {email}
+                                </div>
+                            </div>
+                            <div className={styles.contactSVG} onClick={handleEmailClick}>
+                                <UpRightSVG/>
+                            </div>
+                        </div>
+
+                        <SecondaryPageDivider/>
+
+                        <div className="flex m-5" style={{width:"90%"}}>
+                            <div className={styles.contactSVG}>
+                                <InstagramSVG/>
+                            </div>
+                            <div className="flex justify-center items-center" style={{width:"75%"}}>
+                                <div className="w-auto textHover" style={{cursor:"pointer"}}>
+                                    Instagram
+                                </div>
+                            </div>
+                            <div className={styles.contactSVG}>
+                                <UpRightSVG/>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                    <div className={styles.contactSVG} onClick={handleEmailClick}>
-                        <UpRightSVG/>
-                    </div>
-                  </div>
-
-                  <SecondaryPageDivider/>
-
-                  <div className="flex m-5" style={{width:"90%"}}>
-                    <div className={styles.contactSVG}>
-                        <InstagramSVG/>
-                    </div>
-                    <div className="flex justify-center items-center" style={{width:"75%"}}>
-                        <div className="w-auto" style={{cursor:"pointer"}}>
-                            Instagram
-                        </div>
-                    </div>
-                    <div className={styles.contactSVG}>
-                        <UpRightSVG/>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </>
             }
             color={colors[3]}
         />

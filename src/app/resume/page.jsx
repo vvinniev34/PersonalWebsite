@@ -12,7 +12,7 @@ const ResumePage = () => {
     const description = "Passionate Engineer | Creative Thinker | Lifelong Learner"
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-20">
+        <main className="flex min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
                     <div className="w-auto h-auto pt-5">

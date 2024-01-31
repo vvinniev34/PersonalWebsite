@@ -1,6 +1,6 @@
 
 export default function SubHeader(props) {
-    const { title, description = "", centered = false, color = "black" } = props
+    const { title, description = "", centered = false, color = "black", descriptionColor="gray-600" } = props
     if (!title) {
       return null
     }
@@ -13,7 +13,7 @@ export default function SubHeader(props) {
           </div>
         )}
         {description && (
-          <div className="mt-4 font-serif text-l text-gray-600 md:text-xl">
+          <div className={`mt-4 font-serif text-l text-${descriptionColor} md:text-xl`}>
             {description}
           </div>
         )}

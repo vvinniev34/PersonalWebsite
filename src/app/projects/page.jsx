@@ -26,24 +26,24 @@ const ProjectPage = () => {
             title={"User-Level Thread Library"}
             svg={<StackSVG/>}
             color={colors[5]}
-            description={<div>Designed a user-level thread library and API from scratch, allowing for concurrent execution of multiple threads.<br/>Contains vital functions such as thread creation, scheduling, synchronization, and termination, to enable efficient resource utilization and task parallelism.</div>}
+            description={<div>Designed a user-level thread library and API from scratch.<br/>Contains vital functions such as thread creation, scheduling, synchronization, and termination, to enable efficient resource utilization and task parallelism.</div>}
         />, 
         <ProjectContainer 
             title={"VoiceNotes"}
             image="projects/voicenotes.jpg"
             color={colors[5]}
-            description={<div></div>}
+            description={<div>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>}
         />, 
         <ProjectContainer 
             title={"Cluster Analysis Tool"} 
             image="projects/group.png"
             color={colors[5]}
-            description={<div></div>}
+            description={<div>Designed a parallelized implementation of the k-means clustering ML algorithm to partition user-provided data</div>}
         />
     ]
     
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-20">
+        <main className="flex min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
                     <div className="w-auto h-auto pt-5">

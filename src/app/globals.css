@@ -24,13 +24,23 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-  background: antiquewhite
+  background-image: url("../../public/sky.jpg");
+  /* background-image: url("../../public/blue_sky_lightened.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:antiquewhite;
+  background-color:darkgray;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.textHover:hover {
+  color: gray
 }
 
 @keyframes wave {
