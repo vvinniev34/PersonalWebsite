@@ -99,7 +99,7 @@ const Contact = () => {
                     </div>
               </>
             }
-            color={colors[3]}
+            color={"white"}
         />
     );
 }

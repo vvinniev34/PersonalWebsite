@@ -6,15 +6,28 @@ const variants = {
   enter: { opacity: 1, x: 0, y: 0 },
 }
 
+// swipe
+// export default function Template({ children }) {
+//   return (
+//     <motion.main
+//       variants={variants}
+//       initial="hidden"
+//       animate="enter"
+//       transition={{ type: "linear" }}
+//     >
+//       {children}
+//     </motion.main>
+//   )
+// }
+
+// fade in
 export default function Template({ children }) {
   return (
-    <motion.main
-      variants={variants}
-      initial="hidden"
-      animate="enter"
-      transition={{ type: "linear" }}
-    >
+    <motion.div
+    initial={{ opacity: 0, scale: 1 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8 }}>
       {children}
-    </motion.main>
-  )
+    </motion.div>
+  );
 }

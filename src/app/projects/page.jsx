@@ -43,7 +43,7 @@ const ProjectPage = () => {
     ]
     
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
+        <main className="flex bg-lightgray min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
                     <div className="w-auto h-auto pt-5">
@@ -53,7 +53,7 @@ const ProjectPage = () => {
                     <PageDivider marginBottom={0}></PageDivider>
 
                     <div 
-                        className="w-[100%] bg-white flex items-center justify-center rounded-lg p-8" 
+                        className="w-[100%] bg-darkoffwhite flex items-center justify-center rounded-lg p-8" 
                         style={{paddingBottom:0,borderTopLeftRadius:0, borderTopRightRadius:0}}
                     >
                         <div className="w-[90%] overflow-hidden">
@@ -64,6 +64,8 @@ const ProjectPage = () => {
                             </div>
                         </div>
                     </div>
+
+                    <PageDivider marginBottom={0}></PageDivider>
                 </div>
             </div>
         </main>

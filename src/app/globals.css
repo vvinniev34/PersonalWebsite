@@ -24,13 +24,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-  background-image: url("../../public/sky.jpg");
+  /* background-image: url("../../public/sky.jpg"); */
   /* background-image: url("../../public/blue_sky_lightened.jpg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   background-position: center;
-  background-color:antiquewhite;
-  background-color:darkgray;
+  /* background-color:antiquewhite; */
+  background-color:rgb(246 247 242);
 }
 
 @layer utilities {

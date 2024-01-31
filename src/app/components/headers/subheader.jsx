@@ -13,7 +13,7 @@ export default function SubHeader(props) {
           </div>
         )}
         {description && (
-          <div className={`mt-4 font-serif text-l text-${descriptionColor} md:text-xl`}>
+          <div className={`mt-4 font-serif text-l text-${descriptionColor} md:text-xl`} style={color == "white" ? {color:color} : {}}>
             {description}
           </div>
         )}

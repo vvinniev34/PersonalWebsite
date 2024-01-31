@@ -23,6 +23,13 @@ module.exports = {
 		"darkcyan": "#008b8b",
 		"chocolate": "#7B3F00",
 		"limegreen": "#32CD32",
+		"lightgray": "#d3d3d3",
+
+		"offwhitemain":"#f6f7f2",
+		"darkoffwhite":"#e6e6dd",
+		"darkbrown": "#222",
+		"text-color":"#23282e",
+		"text-muted":"#4f5358",
 	  },
       animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",

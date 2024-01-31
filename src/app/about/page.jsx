@@ -4,9 +4,11 @@ import SubHeader from "../components/headers/subheader.jsx"
 import NoCardSlidingDiv from "../components/divcontainers/slidingdiv/noCardSlidingDiv.jsx"
 import PageDivider from '../components/pagedivider/pagedivider.jsx'
 import Contact from "../components/contact/contact.jsx"
+import Footer from "../components/footer/footer.jsx"
 
 const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
-const brightcolors = ["blueviolet", "deeppink"]
+// const brightcolors = ["blueviolet", "deeppink"]
+const brightcolors= ["indianred"]
 
 const AboutPage = () => {
   const title = "About";
@@ -17,7 +19,7 @@ const AboutPage = () => {
   function SlideIn(title, description, colorI, imgSrc, reverse=false, top=false, bottom=false) {
     return (
       <div 
-        className={`w-[100%] ${reverse ? "" : "bg-white"} rounded-lg flex items-center justify-center`} 
+        className={`w-[100%] rounded-lg flex items-center justify-center`} 
         style={top ? {borderTopLeftRadius:0, borderTopRightRadius:0} : (bottom ? {borderBottomLeftRadius:0, borderBottomRightRadius:0} : {})}
       >
         <div className="w-[90%]">
@@ -40,7 +42,11 @@ const AboutPage = () => {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
+    <>
+    <main 
+      className="flex bg-gradient-to-b from-offwhitemain to-lightgray min-h-screen flex-col items-center justify-between p-20" 
+      style={{paddingLeft:'15%', paddingRight:'15%', paddingBottom:'0%'}}
+    >
       <div className="flex space-y-20 w-full">
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           <div className="w-full h-auto pt-5">
@@ -50,19 +56,21 @@ const AboutPage = () => {
           {/* <PageDivider marginBottom={2.5}></PageDivider> */}
           <PageDivider marginBottom={0}></PageDivider>
 
-          <div className="w-[100%] flex flex-col items-center justify-center">
+          <div className="w-[100%] bg-darkoffwhite flex flex-col items-center justify-center">
               {SlideIn("About Me", currentlyDoing, 0, "projects/reddit.jpg", false, true, false)}
               {SlideIn("About Me", currentlyDoing, 1, "about/food.jpg", true)}
               {SlideIn("About Me", currentlyDoing, 2, "projects/reddit.jpg", false, false, true)}
           </div>
 
           <PageDivider marginBottom={2.5}></PageDivider>
-          <div className="" style={{width:"100%"}}> 
+          {/* <div className="" style={{width:"100%"}}> 
             <Contact/>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
+    {/* <Footer/> */}
+    </>
   )
 }
 
