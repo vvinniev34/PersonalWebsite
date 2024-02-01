@@ -48,7 +48,7 @@ const Contact = () => {
                             </div>
                         </div>
                         
-                        <SecondaryPageDivider/>
+                        <SecondaryPageDivider dark={true}/>
                         
                         <div className="flex m-5" style={{width:"90%"}}>
                             <div className={styles.contactSVG} onClick={handleLinkedInClick}>
@@ -64,7 +64,7 @@ const Contact = () => {
                             </div>
                         </div>
                         
-                        <SecondaryPageDivider/>
+                        <SecondaryPageDivider dark={true}/>
 
                         <div className="flex m-5" style={{width:"90%"}}>
                             <div className={styles.contactSVG} onClick={handleEmailClick}>
