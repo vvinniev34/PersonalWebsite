@@ -32,7 +32,7 @@ const Contact = () => {
                 <>
                     <div className='font-semibold'>Let's connect</div>
                     <div>Get in touch for opportunites or just to say hi! 👋</div>
-                    <div className="flex width" style={{width:"40%"}}>
+                    <div className="flex" style={{width:"20rem", maxWidth:"fit-content"}/*{width:"40%"}*/}>
                         <div className="flex flex-col ">
                         <div className="flex m-5" style={{width:"90%"}}>
                             <div className={styles.contactSVG} onClick={handleGithubClick}>
@@ -80,7 +80,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <SecondaryPageDivider/>
+                        <SecondaryPageDivider dark={true}/>
 
                         <div className="flex m-5" style={{width:"90%"}}>
                             <div className={styles.contactSVG}>
