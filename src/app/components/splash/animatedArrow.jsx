@@ -1,13 +1,14 @@
 "use client"
 
-export default function AnimatedArrow(){
-    const scrollDown = function () {
-        const element = document.getElementById("about")
-        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-    }
+export const scrollDown = function () {
+    const element = document.getElementById("about")
+    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
 
+export default function AnimatedArrow(){
     return (
         <div 
+            className="clickme"
             style={{width:"3rem", position:"absolute", marginTop:"4rem", cursor:"pointer"}}
             onClick={() => scrollDown()}
         >
@@ -21,11 +22,11 @@ export default function AnimatedArrow(){
             >
                 <defs>  
                     <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
-                        <stop offset="0%" stop-color="#7A5FFF">
-                            <animate attributeName="stop-color" values="#7A5FFF; #01FF89; #7A5FFF" dur="2s" repeatCount="indefinite"></animate>
+                        <stop offset="0%" stop-color="#000000">
+                            <animate attributeName="stop-color" values="#000000; #d3d3d3; #000000" dur="2s" repeatCount="indefinite"></animate>
                         </stop>
-                        <stop offset="100%" stop-color="#01FF89">
-                            <animate attributeName="stop-color" values="#01FF89; #7A5FFF; #01FF89" dur="2s" repeatCount="indefinite"></animate>
+                        <stop offset="100%" stop-color="#d3d3d3">
+                            <animate attributeName="stop-color" values="#d3d3d3; #000000; #d3d3d3" dur="2s" repeatCount="indefinite"></animate>
                         </stop>
                     </linearGradient> 
                 </defs>

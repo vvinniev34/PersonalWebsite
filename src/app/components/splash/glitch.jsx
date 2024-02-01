@@ -1,6 +1,6 @@
 "use client";
-
 import React, { useEffect, useState } from 'react';
+import { scrollDown } from './animatedArrow';
 
 export default function Glitch() {
 	// 22 characters
@@ -42,7 +42,7 @@ export default function Glitch() {
 
 
 
-		}, 3700);
+		}, 3500);
 
 		return () => {
 			clearInterval(textChangeEffect);
@@ -50,7 +50,11 @@ export default function Glitch() {
 	}, [textIndex]);
 
 	return (
-		<h2 className="text-md font-mono duration-500 text-gray-60 hover:text-gray-400 text-xl">
+		<h2 
+			className="text-md font-mono duration-500 text-gray-60 hover:text-gray-400 text-xl" 
+			onClick={() => scrollDown()}
+			style={{cursor:"pointer"}}
+		>
 			{dataValue}
 		</h2>
 	);

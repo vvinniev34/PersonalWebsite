@@ -112,3 +112,20 @@ body {
 .group:hover .underline {
   animation: underline 0.30s forwards;
 }
+
+.clickme {
+  animation: expandAnimation 2s ease-in-out infinite;
+}
+
+.clickme:hover, .clickme:focus {
+  animation-play-state: paused;
+}
+
+@keyframes expandAnimation {
+  0%, 40%, 100% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+}
