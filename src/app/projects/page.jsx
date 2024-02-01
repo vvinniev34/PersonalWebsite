@@ -43,9 +43,13 @@ const ProjectPage = () => {
     ]
     
     return (
-        <main className="flex bg-lightgray min-h-screen flex-col items-center justify-between p-20" style={{paddingLeft:'15%', paddingRight:'15%'}}>
+        <section 
+            className="flex bg-darkgray min-h-screen flex-col items-center justify-between p-20" 
+            style={{paddingLeft:'15%', paddingRight:'15%'}}
+            id="projects"
+        >
             <div className="flex space-y-20 w-full">
-                <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
+                <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
                     <div className="w-auto h-auto pt-5">
                         <Header centered={true} title={title} description={description} color={brightcolors[1]}></Header>
                     </div>
@@ -53,8 +57,8 @@ const ProjectPage = () => {
                     <PageDivider marginBottom={0}></PageDivider>
 
                     <div 
-                        className="w-[100%] bg-darkoffwhite flex items-center justify-center rounded-lg p-8" 
-                        style={{paddingBottom:0,borderTopLeftRadius:0, borderTopRightRadius:0}}
+                        className="w-[100%] bg-darkoffwhite flex items-center justify-center p-8" 
+                        style={{paddingBottom:0}}
                     >
                         <div className="w-[90%] overflow-hidden">
                             <SubHeader title={"Ongoing"} color={colors[4]}></SubHeader>
@@ -68,7 +72,7 @@ const ProjectPage = () => {
                     <PageDivider marginBottom={0}></PageDivider>
                 </div>
             </div>
-        </main>
+        </section>
     );
 }
 

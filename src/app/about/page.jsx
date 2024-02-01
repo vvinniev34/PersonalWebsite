@@ -42,10 +42,10 @@ const AboutPage = () => {
   }
 
   return (
-    <>
-    <main 
+    <section 
       className="flex bg-gradient-to-b from-offwhitemain to-lightgray min-h-screen flex-col items-center justify-between p-20" 
       style={{paddingLeft:'15%', paddingRight:'15%', paddingBottom:'0%'}}
+      id="about"
     >
       <div className="flex space-y-20 w-full">
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
@@ -63,14 +63,9 @@ const AboutPage = () => {
           </div>
 
           <PageDivider marginBottom={2.5}></PageDivider>
-          {/* <div className="" style={{width:"100%"}}> 
-            <Contact/>
-          </div> */}
         </div>
       </div>
-    </main>
-    {/* <Footer/> */}
-    </>
+    </section>
   )
 }
 

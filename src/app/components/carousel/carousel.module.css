@@ -75,7 +75,6 @@
 
 .embla__button path {
     fill: black;
-    transition: fill 0.3s ease; 
 }
 
 .embla__button:hover path {
