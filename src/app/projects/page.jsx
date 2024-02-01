@@ -44,7 +44,7 @@ const ProjectPage = () => {
     
     return (
         <section 
-            className="flex bg-darkgray min-h-screen flex-col items-center justify-between p-20" 
+            className={"flex bg-darkgray flex-col items-center justify-between p-20"/*min-h-screen*/} 
             style={{paddingLeft:'15%', paddingRight:'15%'}}
             id="projects"
         >

@@ -18,6 +18,7 @@ module.exports = {
 		"blueviolet": "#8a2be2",
 		"cadetblue": "#5f9ea0",
 		"lightsalmon": "#ffa07a",
+		"salmon": "#FA8072",
 		"indianred": "#cd5c5c",
 		"deeppink": "#ff1493",
 		"darkcyan": "#008b8b",
@@ -25,6 +26,7 @@ module.exports = {
 		"limegreen": "#32CD32",
 		"lightgray": "#d3d3d3",
 		"darkgray": "#a9a9a9",
+		"dullyellow": "#FFDB58",
 
 		"offwhitemain":"#f6f7f2",
 		"darkoffwhite":"#e6e6dd",
