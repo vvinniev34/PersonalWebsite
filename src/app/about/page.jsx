@@ -3,11 +3,8 @@ import Header from "../components/headers/header.jsx"
 import SubHeader from "../components/headers/subheader.jsx"
 import NoCardSlidingDiv from "../components/divcontainers/slidingdiv/noCardSlidingDiv.jsx"
 import PageDivider from '../components/pagedivider/pagedivider.jsx'
-import Contact from "../components/contact/contact.jsx"
-import Footer from "../components/footer/footer.jsx"
 
-const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
-// const brightcolors = ["blueviolet", "deeppink"]
+const colors = ["cadetblue", "lightsalmon", "salmon", "darkorange", "indianred", "darkcyan", "chocolate"]
 const brightcolors= ["indianred"]
 
 const AboutPage = () => {
@@ -53,13 +50,12 @@ const AboutPage = () => {
             <Header centered={true} title={title} description={introduction} color={brightcolors[0]}></Header>
           </div>
 
-          {/* <PageDivider marginBottom={2.5}></PageDivider> */}
           <PageDivider marginBottom={0}></PageDivider>
 
           <div className="w-[100%] bg-darkoffwhite flex flex-col items-center justify-center">
-              {SlideIn("About Me", currentlyDoing, 0, "projects/reddit.jpg", false, true, false)}
-              {SlideIn("About Me", currentlyDoing, 1, "about/food.jpg", true)}
-              {SlideIn("About Me", currentlyDoing, 2, "projects/reddit.jpg", false, false, true)}
+              {SlideIn("About Me", currentlyDoing, 1, "projects/reddit.jpg", false, true, false)}
+              {SlideIn("About Me", currentlyDoing, 2, "about/food.jpg", true)}
+              {SlideIn("About Me", currentlyDoing, 1, "projects/reddit.jpg", false, false, true)}
           </div>
 
           <PageDivider marginBottom={2.5}></PageDivider>

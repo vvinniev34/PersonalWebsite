@@ -8,7 +8,7 @@ import StackSVG from "../components/projectcontainer/svgs.jsx"
 import "../globals.css";
 
 const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
-const brightcolors = ["blueviolet", "deeppink"]
+const brightcolors = ["blueviolet", "deeppink", "dullyellow"]
 
 const ProjectPage = () => {
     const title = "Projects";
@@ -19,25 +19,25 @@ const ProjectPage = () => {
         <ProjectContainer 
             title={"RedditReels"} 
             image="projects/reddit.jpg"
-            color={colors[5]}
+            color={colors[1]}
             description={<div>Automatic short-form video content generator and uploader for TikTok, YouTube Shorts, and Instagram Reels.<br/>On pace for 30,000,000 annual views.</div>}
         />, 
         <ProjectContainer 
             title={"User-Level Thread Library"}
             svg={<StackSVG/>}
-            color={colors[5]}
+            color={colors[1]}
             description={<div>Designed a user-level thread library and API from scratch.<br/>Contains vital functions such as thread creation, scheduling, synchronization, and termination, to enable efficient resource utilization and task parallelism.</div>}
         />, 
         <ProjectContainer 
             title={"VoiceNotes"}
             image="projects/voicenotes.jpg"
-            color={colors[5]}
+            color={colors[1]}
             description={<div>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>}
         />, 
         <ProjectContainer 
             title={"Cluster Analysis Tool"} 
             image="projects/group.png"
-            color={colors[5]}
+            color={colors[1]}
             description={<div>Designed a parallelized implementation of the k-means clustering ML algorithm to partition user-provided data</div>}
         />
     ]
@@ -51,7 +51,7 @@ const ProjectPage = () => {
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
                     <div className="w-auto h-auto pt-5">
-                        <Header centered={true} title={title} description={description} color={brightcolors[1]}></Header>
+                        <Header centered={true} title={title} description={description} color={"#483D8B"}></Header>
                     </div>
 
                     <PageDivider marginBottom={0}></PageDivider>
