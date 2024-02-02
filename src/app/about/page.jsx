@@ -40,8 +40,8 @@ const AboutPage = () => {
 
   return (
     <section 
-      className="flex bg-gradient-to-b from-offwhitemain to-lightgray min-h-screen flex-col items-center justify-between p-20" 
-      style={{paddingLeft:'15%', paddingRight:'15%', paddingBottom:'0%'}}
+      className="adaptivePadding flex bg-gradient-to-b from-offwhitemain to-lightgray min-h-screen flex-col items-center justify-between" 
+      style={{paddingBottom:'0%', paddingTop:'4.5rem'}}
       id="about"
     >
       <div className="flex space-y-20 w-full">

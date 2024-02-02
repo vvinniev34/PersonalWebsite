@@ -44,8 +44,8 @@ const ProjectPage = () => {
     
     return (
         <section 
-            className={"flex bg-darkgray flex-col items-center justify-between p-20"/*min-h-screen*/} 
-            style={{paddingLeft:'15%', paddingRight:'15%'}}
+            className={"adaptivePadding flex bg-darkgray flex-col items-center justify-between"/*min-h-screen*/} 
+            style={{paddingBottom:'0%', paddingTop:'4.5rem'}}
             id="projects"
         >
             <div className="flex space-y-20 w-full">
@@ -69,7 +69,7 @@ const ProjectPage = () => {
                         </div>
                     </div>
 
-                    <PageDivider marginBottom={0}></PageDivider>
+                    <PageDivider marginBottom={2.5}></PageDivider>
                 </div>
             </div>
         </section>
