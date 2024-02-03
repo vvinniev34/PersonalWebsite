@@ -1,8 +1,11 @@
 
 .paddingFooter {
-    padding: 15rem;
+    padding: 25rem;
     transition: padding 0.3s ease;
   
+    @media (max-width: 1792px) {
+        padding: 20rem; 
+      }
     @media (max-width: 1536px) {
       padding: 15rem; 
     }
