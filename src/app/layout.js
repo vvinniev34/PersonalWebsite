@@ -5,7 +5,7 @@ import Navbar from "./components/navigation/navbar/navBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Vincent's Portfolio",
+  title: "Vincent Liu",
   description: "Vincent's Portfolio website, created using Next.js",
 };
 

@@ -25,8 +25,12 @@ module.exports = {
 		"chocolate": "#7B3F00",
 		"limegreen": "#32CD32",
 		"lightgray": "#d3d3d3",
+		"dimgray": "#696969",
 		"darkgray": "#a9a9a9",
 		"dullyellow": "#FFDB58",
+		"tan": "#d2b48c",
+		"burlywood": "#deb887",
+		"brown": "#964B00",
 
 		"offwhitemain":"#f6f7f2",
 		"darkoffwhite":"#e6e6dd",

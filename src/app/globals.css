@@ -39,6 +39,11 @@ body {
   }
 }
 
+.artifactWord {
+  color: indianred;
+  cursor: pointer;
+}
+
 .adaptivePadding {
   padding: 15rem; 
   transition: padding 0.3s ease;
@@ -63,33 +68,6 @@ body {
   }
   @media (max-width: 1024px) {
     padding: 0rem; 
-  }
-}
-
-.paddingFooter {
-  padding: 15rem;
-  transition: padding 0.3s ease;
-
-  @media (max-width: 1536px) {
-    padding: 15rem; 
-  }
-  @media (max-width: 1472px) {
-    padding: 12.5rem; 
-  }
-  @media (max-width: 1408px) {
-    padding: 10rem; 
-  }
-  @media (max-width: 1344px) {
-    padding: 7.5rem; 
-  }
-  @media (max-width: 1280px) {
-    padding: 5rem; 
-  }
-  @media (max-width: 1152px) {
-    padding: 2.5rem;
-  }
-  @media (max-width: 1024px) {
-    padding: 15%; 
   }
 }
 
