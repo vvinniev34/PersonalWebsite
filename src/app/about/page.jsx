@@ -48,8 +48,8 @@ const AboutPage = () => {
 
   return (
     <section 
-      className="adaptivePadding flex bg-offwhitemain min-h-screen flex-col items-center justify-between" 
-      style={{paddingBottom:'0%', paddingTop:'4.5rem'}}
+      className="adaptivePadding flex bg-offwhitemain flex-col items-center justify-between" 
+      style={{paddingBottom:'4.5rem', paddingTop:'4.5rem'}}
       id="about"
     >
       <div className="flex space-y-20 w-full">

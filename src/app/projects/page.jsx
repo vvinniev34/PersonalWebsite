@@ -45,7 +45,7 @@ const ProjectPage = () => {
     return (
         <section 
             className={"adaptivePadding flex bg-offwhitemain flex-col items-center justify-between"/*min-h-screen*/} 
-            style={{paddingBottom:'0%', paddingTop:'4.5rem'}}
+            style={{paddingBottom:'4.5rem', paddingTop:'4.5rem'}}
             id="projects"
         >
             <div className="flex space-y-20 w-full">
