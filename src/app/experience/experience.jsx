@@ -45,7 +45,7 @@ const ExperiencePage = () => {
 
     return (
         <section 
-            className="adaptivePadding flex bg-brownflex-col items-center justify-between" 
+            className="adaptivePadding flex bg-brown flex-col items-center justify-between" 
             style={{paddingBottom:'4.5rem', paddingTop:'4.5rem'}}
             id="experience"
         >
