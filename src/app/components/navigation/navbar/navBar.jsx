@@ -2,7 +2,7 @@
 import SmoothScrollLink from "./navUtils.jsx"
 
 export default function Navbar() {
-  const menuItems = [["Home", "/"], ["About", "about"], ["Projects", "projects"]]//, ["Resume", "resume"]]
+  const menuItems = [["Home", "/"], ["About", "about"], ["Experience", "experience"], ["Projects", "projects"]]
   return (
     <div className="sticky top-0 flex flex-wrap items-center gap-x-5 bg-white/80 px-4 py-4 backdrop-blur md:px-16 md:py-5 lg:px-32 w-full" style={{position:"fixed", zIndex:"12"}}>
       {menuItems.map((menuItem, i) => {

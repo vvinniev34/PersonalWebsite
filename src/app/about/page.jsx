@@ -48,7 +48,7 @@ const AboutPage = () => {
 
   return (
     <section 
-      className="adaptivePadding flex bg-gradient-to-b from-offwhitemain to-lightgray min-h-screen flex-col items-center justify-between" 
+      className="adaptivePadding flex bg-offwhitemain min-h-screen flex-col items-center justify-between" 
       style={{paddingBottom:'0%', paddingTop:'4.5rem'}}
       id="about"
     >
@@ -61,8 +61,8 @@ const AboutPage = () => {
           <PageDivider marginBottom={0}></PageDivider>
           {/*1 2 1*/}
           <div className="w-[100%] bg-darkoffwhite flex flex-col items-center justify-center">
-              {SlideIn("Hey, I'm Vincent!", intro, 1, "projects/reddit.jpg", false, true, false)}
-              {SlideIn("Some Background", background, 1, "projects/reddit.jpg", true)}
+              {SlideIn("Hey, I'm Vincent!", intro, 1, "", false, true, false)}
+              {SlideIn("Some Background", background, 1, "", true)}
               {SlideIn("My Interests", interests, 1, "about/food.jpg", false, false, true)}
           </div>
 

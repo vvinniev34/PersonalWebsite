@@ -9,7 +9,7 @@ export default function Home() {
       <>
         <Splash/>
         <AboutPage/>
-        {/* <ExperiencePage/> */}
+        <ExperiencePage/>
         <ProjectPage/>
         <Footer/>
       </>

@@ -21,6 +21,8 @@ module.exports = {
 		"salmon": "#FA8072",
 		"indianred": "#cd5c5c",
 		"deeppink": "#ff1493",
+		"lightpink": "#f5dede",
+		"verylightpink": "#faeeee",
 		"darkcyan": "#008b8b",
 		"chocolate": "#7B3F00",
 		"limegreen": "#32CD32",
@@ -30,7 +32,8 @@ module.exports = {
 		"dullyellow": "#FFDB58",
 		"tan": "#d2b48c",
 		"burlywood": "#deb887",
-		"brown": "#964B00",
+		"brown": "#a52a2a",
+		"steelblue": "#4682b4",
 
 		"offwhitemain":"#f6f7f2",
 		"darkoffwhite":"#e6e6dd",
