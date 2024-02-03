@@ -5,7 +5,7 @@ export default function TertiaryHeader(props) {
       return null
     }
     return (
-      <div className={`${centered ? 'text-center' : 'w-full'} pb-20`} style={{color:color}}>
+      <div className={`${centered ? 'text-center' : 'w-full'}`} style={{color:color}}>
         {title && (
           <div className="text-xl font-extrabold tracking-tight md:text-2xl">
             {title}

@@ -1,6 +1,6 @@
 
 export default function SubHeader(props) {
-    const { title, description = "", centered = false, color = "black", descriptionColor="gray-600" } = props
+    const { title, description = "", centered = false, color = "black", descriptionColor = "gray-600" } = props
     if (!title) {
       return null
     }

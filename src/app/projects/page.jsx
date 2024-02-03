@@ -7,7 +7,7 @@ import Carousel from "../components/carousel/carousel.jsx"
 import StackSVG from "../components/projectcontainer/svgs.jsx"
 import "../globals.css";
 
-const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
+const colors = ["darkorange", "burlywood", "tan", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
 const brightcolors = ["blueviolet", "deeppink", "dullyellow"]
 
 const ProjectPage = () => {
@@ -20,38 +20,38 @@ const ProjectPage = () => {
             title={"RedditReels"} 
             image="projects/reddit.jpg"
             color={colors[1]}
-            description={<div>Automatic short-form video content generator and uploader for TikTok, YouTube Shorts, and Instagram Reels.<br/>On pace for 30,000,000 annual views.</div>}
+            description={<div>Automatic short-form video content generator and uploader for TikTok, YouTube, and Instagram.<br/>About 30,000,000 annual views.</div>}
         />, 
         <ProjectContainer 
             title={"User-Level Thread Library"}
             svg={<StackSVG/>}
             color={colors[1]}
-            description={<div>Designed a user-level thread library and API from scratch.<br/>Contains vital functions such as thread creation, scheduling, synchronization, and termination, to enable efficient resource utilization and task parallelism.</div>}
+            description={<div>User-level thread library and API.<br/>Contains vital functions such as thread creation, scheduling, synchronization, and termination.</div>}
         />, 
         <ProjectContainer 
             title={"VoiceNotes"}
             image="projects/voicenotes.jpg"
             color={colors[1]}
-            description={<div>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>}
+            description={<div>Fully voice controlled note-taking app for hands-free use.</div>}
         />, 
         <ProjectContainer 
-            title={"Cluster Analysis Tool"} 
+            title={"GroupFinder"} 
             image="projects/group.png"
             color={colors[1]}
-            description={<div>Designed a parallelized implementation of the k-means clustering ML algorithm to partition user-provided data</div>}
+            description={<div>Clusters user-submitted data based upon similarity.<br/>Uses a parallelized implementation of a k-means clustering ML algorithm.</div>}
         />
     ]
     
     return (
         <section 
-            className={"adaptivePadding flex bg-darkgray flex-col items-center justify-between"/*min-h-screen*/} 
+            className={"adaptivePadding flex bg-dimgray flex-col items-center justify-between"/*min-h-screen*/} 
             style={{paddingBottom:'0%', paddingTop:'4.5rem'}}
             id="projects"
         >
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
                     <div className="w-auto h-auto pt-5">
-                        <Header centered={true} title={title} description={description} color={"#483D8B"}></Header>
+                        <Header centered={true} title={title} description={description} color={"antiquewhite"} descriptionColor="antiquewhite"></Header>
                     </div>
 
                     <PageDivider marginBottom={0}></PageDivider>
@@ -61,7 +61,7 @@ const ProjectPage = () => {
                         style={{paddingBottom:0}}
                     >
                         <div className="w-[90%] overflow-hidden">
-                            <SubHeader title={"Ongoing"} color={colors[4]}></SubHeader>
+                            <SubHeader title={"Completed"} color={colors[2]}></SubHeader>
 
                             <div className="w-full rounded-lg shadow-lg">
                                 <Carousel projectList={projects}></Carousel>

@@ -1,6 +1,6 @@
 
 export default function Header(props) {
-    const { title, description = "", centered = false, color = "black" } = props
+    const { title, description = "", centered = false, color = "black", descriptionColor } = props
     if (!title) {
       return null
     }
@@ -13,7 +13,10 @@ export default function Header(props) {
           </div>
         )}
         {description && (
-          <div className={`${centered ? `flex justify-center` : ``} mt-4 font-serif text-xl text-gray-600 md:text-2xl`}>
+          <div 
+            className={`${centered ? `flex justify-center` : ``} mt-4 font-serif text-xl text-gray-600 md:text-2xl`} 
+            style={descriptionColor ? {color:descriptionColor} : {}}
+          >
             {description}
           </div>
         )}

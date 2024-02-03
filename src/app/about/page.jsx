@@ -11,8 +11,10 @@ const AboutPage = () => {
   const title = "About";
   const introduction = <div>I'm an aspiring Software Engineer based in Minneapolis. Welcome to my portfolio.</div>;
   
-  const currentlyDoing = "well, so far feeling very good. I'm so proud to make this big decision in my life in football. As you mentioned before, in Europe, my work, it's done. I won everything. I played in the most important clubs in Europe. And for me now is a new challenge."
-  
+  const intro = <div>I'm a 3rd year student at the University of Minnesota majoring in Computer Science. </div>
+  const background = <div>In 2017, I made my first scratch game as part of a school mandated Everybody Needs To Code class. The game itself was awful, but the little bits of time I took to make it the best game I could make stuck with me. Little would I know, my goofy Scratch game would become the catalyst into kindling my passion for the world of coding and technology. Fast forward to today, and</div>
+  const interests = <div>When I need to unplug, you can catch me in the kitchen whipping up recipes I found online. Whether it's a crème brûlée or a classic steak au poivre, I'm down to experiment. If you don't find me there, chances are that I'm at the gym, engaged in an intense hoop sesh, or simply lounging on my couch, indulging in a nostalgic binge-watch of my childhood sitcoms.</div>
+
   function SlideIn(title, description, colorI, imgSrc, reverse=false, top=false, bottom=false) {
     return (
       <div 
@@ -21,16 +23,21 @@ const AboutPage = () => {
       >
         <div className="w-[90%]">
           <NoCardSlidingDiv reverse={reverse}>
-            <div className={`w-3/12 ${reverse ? "ml-[8.33%]" : "mr-[8.33%]"}`}>
+            <div 
+              // className={`w-3/12 ${reverse ? "ml-[8.33%]" : "mr-[8.33%]"}`}
+              style={reverse ? {marginLeft:"2.5%", width:"42.5%"} : {marginRight:"2.5%", width:"42.5%"}}
+            >
               <SubHeader 
                 title={title} 
                 description={description} 
                 color={colors[colorI]}
               />
             </div>
-            <div className="w-8/12 m-0 bg-offwhite overflow-hidden rounded-lg zoom-on-hover">
-              <img src={imgSrc} alt="image" className="h-[100%] object-cover"/>
-              Image
+            <div 
+              className="w-8/12 m-0 bg-offwhite overflow-hidden rounded-lg"
+              style={{width:"55%"}}
+            >
+              <img src={imgSrc} alt="image" className="h-[100%] object-cover zoom-on-hover"/>
             </div>
           </NoCardSlidingDiv>
         </div>
@@ -53,9 +60,9 @@ const AboutPage = () => {
           <PageDivider marginBottom={0}></PageDivider>
 
           <div className="w-[100%] bg-darkoffwhite flex flex-col items-center justify-center">
-              {SlideIn("About Me", currentlyDoing, 1, "projects/reddit.jpg", false, true, false)}
-              {SlideIn("About Me", currentlyDoing, 2, "about/food.jpg", true)}
-              {SlideIn("About Me", currentlyDoing, 1, "projects/reddit.jpg", false, false, true)}
+              {SlideIn("Hey, I'm Vincent!", intro, 1, "projects/reddit.jpg", false, true, false)}
+              {SlideIn("Some Background", background, 2, "projects/reddit.jpg", true)}
+              {SlideIn("My Interests", interests, 1, "about/food.jpg", false, false, true)}
           </div>
 
           <PageDivider marginBottom={2.5}></PageDivider>
