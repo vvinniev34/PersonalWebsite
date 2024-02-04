@@ -31,6 +31,7 @@ body {
   background-position: center;
   /* background-color:antiquewhite; */
   background-color:rgb(246 247 242);
+  min-width: 700px;
 }
 
 @layer utilities {
