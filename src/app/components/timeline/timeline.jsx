@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 export default function Timeline(props) {
     const { elements = [] } = props;
 
-    function TimelineElement(title, location, description, time) {
+    function TimelineElement(title, location, description, time, image = null) {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -14,8 +14,11 @@ export default function Timeline(props) {
                 contentStyle={{ background: '#e19d9d', color: '#fff' }}
                 // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date={time}
-                iconStyle={{ background: '#e19d9d', color: '#fff' }}
-                // icon={<WorkIcon />}
+                iconStyle={{ background: '#fff', color: '#fff', overflow: "hidden" }}
+                icon={image ? 
+                    <div className='w-full h-full flex items-center justify-center bg-white'>
+                        <img src={image} alt='' className='object-cover'/>
+                    </div> : {}}
             >
                 <h3 className="vertical-timeline-element-title">{title}</h3>
                 <h4 className="vertical-timeline-element-subtitle">{location}</h4>
@@ -25,13 +28,12 @@ export default function Timeline(props) {
     }
 
     return (
-        <VerticalTimeline layout={"1-column-left"}>
+        <VerticalTimeline layout={"1-column-left"} lineColor={"indianred"}>
             {elements.map(element => {
-                return TimelineElement(element.title, element.location, element.description, element.time)
+                return TimelineElement(element.title, element.location, element.description, element.time, element.img)
             })}
             {/* <VerticalTimelineElement
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                // icon={<StarIcon />}
             /> */}
             </VerticalTimeline>
     );

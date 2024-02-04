@@ -17,7 +17,8 @@ const ExperiencePage = () => {
             title:"University of Minnesota",
             location:"Minneapolis, MN",
             description:"B.S. Computer Science",
-            time:"September 2021 - Present"
+            time:"September 2021 - Present",
+            img:"experience/minnesota.png"
         }
     ]
     const workExperience = [
@@ -25,13 +26,15 @@ const ExperiencePage = () => {
             title:"NLP Undergraduate Researcher",
             location:"Minneapolis, MN",
             description:"",
-            time:"October 2023 - Present"
+            time:"October 2023 - Present",
+            img:"experience/minnesota.png"
         },
         {
             title:"Software Developer Intern",
             location:"Madison, WI",
             description:"Telehealth",
-            time:"May 2023 - August 2023"
+            time:"May 2023 - August 2023",
+            img:"experience/epic_systems.jpg"
         }
     ]
 
