@@ -4,6 +4,10 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport = {
+  initialScale: '0.5',
+}
+
 export const metadata = {
   title: "Vincent Liu",
   description: "Vincent's Portfolio website, created using Next.js",
