@@ -55,7 +55,7 @@ const AboutPage = () => {
     >
       <div className="flex space-y-20 w-full">
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
-          <div className="w-full h-auto pt-5">
+          <div className="w-full h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
             <Header centered={true} title={title} description={introduction} color={brightcolors[0]}></Header>
           </div>
 

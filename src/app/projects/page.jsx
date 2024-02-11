@@ -50,7 +50,7 @@ const ProjectPage = () => {
         >
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
-                    <div className="w-auto h-auto pt-5">
+                    <div className="w-auto h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
                         <Header centered={true} title={title} description={description} color={"brown"}></Header>
                     </div>
 

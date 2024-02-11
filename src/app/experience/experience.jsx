@@ -54,7 +54,7 @@ const ExperiencePage = () => {
         >
             <div className="flex space-y-20 w-full">
                 <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
-                    <div className="w-auto h-auto pt-5">
+                    <div className="w-auto h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
                         <Header centered={true} title={title} description={description} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></Header>
                     </div>
 
