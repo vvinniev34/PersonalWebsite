@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { scrollDown } from './animatedArrow';
+import { scrollDown, ArrowSVG } from './animatedArrow';
 
 export default function Glitch() {
 	// 22 characters
@@ -51,11 +51,33 @@ export default function Glitch() {
 
 	return (
 		<h2 
-			className="text-md font-mono duration-500 text-black hover:text-gray-500 text-xl preventSelect" 
-			onClick={() => scrollDown()}
+			className="text-md font-mono text-black hover:text-gray-500 text-xl" 
+			// onClick={() => scrollDown()}
 			style={{cursor:"pointer"}}
 		>
 			{dataValue}
 		</h2>
+	);
+}
+
+export function LearnMoreScroll() {
+	return (
+		<div 
+			className="flex items-center justify-center" 
+			style={{position:"absolute", height :"9%", bottom:"5rem"}}
+		>
+			<div 
+				className="flex flex-col items-center justify-center animate-fade-in font-mono text-black scrollHover text-xl"
+				style={{cursor:"pointer", maxHeight:"80%"}}
+				onClick={() => scrollDown()}
+			>
+				<div>Learn More</div>
+				<div
+					style={{width:"32px", cursor:"pointer"}}
+				>
+					<ArrowSVG/>
+				</div>
+			</div>
+		</div>
 	);
 }

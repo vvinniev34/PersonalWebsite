@@ -1,7 +1,6 @@
 import React from "react";
 import Particles from "./particles";
-import Glitch from "./glitch";
-import AnimatedArrow from "./animatedArrow"
+import Glitch, { LearnMoreScroll } from "./glitch";
 
 const scrollToElement = (id) => {
 	const element = document.getElementById(id);
@@ -32,10 +31,9 @@ const Splash = () => {
 
 			<div className="my-16 text-center animate-fade-in flex flex-col items-center ">
 				<Glitch></Glitch>
-				<AnimatedArrow/>
 			</div>
 
-
+			<LearnMoreScroll/>
 		</section>
 	);
 };
