@@ -66,7 +66,7 @@ export function LearnMoreScroll() {
 			className="flex items-center justify-center" 
 			style={{position:"absolute", height :"6rem", bottom:"5.5rem"}}
 		>	
-			<div className='pulse' style={{padding:"0.75rem", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}>
+			<div className='pulse' style={{padding:"0.75rem", paddingTop:"0.25rem", paddingBottom:"0.25rem"}}>
 				<div 
 					className="flex flex-col items-center justify-center animate-fade-in font-mono text-black scrollHover text-xl"
 					style={{cursor:"pointer", maxHeight:"4rem"}}

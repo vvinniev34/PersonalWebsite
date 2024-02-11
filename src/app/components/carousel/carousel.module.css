@@ -21,6 +21,7 @@
     min-width: 0;
     padding-left: var(--slide-spacing);
     position: relative;
+    overflow: hidden;
 }
 
 .embla__slide__img {

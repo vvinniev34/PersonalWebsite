@@ -175,21 +175,40 @@ body {
   }
 }
 
-.timelineHover:hover {
-  background: #dc8c8c !important;
-  transform: translateY(0.125rem);
-}
-
 .pulse:hover {
   animation: pulse-animation 2s infinite;
 }
 
 @keyframes pulse-animation {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
   }
   100% {
-    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 18px rgba(0, 0, 0, 0);
   }
 }
 
+.projectCard:hover:before {
+  background-position: 100% 100%;
+}
+
+.projectCard:before {
+  background: linear-gradient(130deg,
+  #f6f2ee 0% 33%,
+  #faeeee 70%,
+  pink 87%,
+    #F88379 100%);
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: background-position 500ms ease, transform 500ms ease;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.timelineHover:hover {
+  background: #dc8c8c !important;
+  transform: translateY(0.125rem);
+}

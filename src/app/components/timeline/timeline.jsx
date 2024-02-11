@@ -12,7 +12,6 @@ export default function Timeline(props) {
                 className="vertical-timeline-element--work"
                 textClassName="timelineHover"
                 contentStyle={{ background: '#e19d9d', color: '#fff' }}
-                // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date={time}
                 iconStyle={{ background: '#fff', color: '#fff', overflow: "hidden" }}
                 icon={image ? 
