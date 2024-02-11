@@ -1,7 +1,7 @@
 
 .uofmn:hover {
     color: #a44949;
-    cursor: pointer;
+    cursor: url("../../../public/about/cursorimages/32pxUMN.png"), pointer;
 }
   
 .magicWand:hover {

@@ -52,7 +52,7 @@ export default function Glitch() {
 	return (
 		<h2 
 			className="text-md font-mono text-black hover:text-gray-500 text-2xl" 
-			// onClick={() => scrollDown()}
+			onClick={() => scrollDown()}
 			style={{cursor:"pointer"}}
 		>
 			{dataValue}
@@ -64,7 +64,7 @@ export function LearnMoreScroll() {
 	return (
 		<div 
 			className="flex items-center justify-center" 
-			style={{position:"absolute", height :"9%", bottom:"5rem"}}
+			style={{position:"absolute", height :"9%", bottom:"5.5rem"}}
 		>
 			<div 
 				className="flex flex-col items-center justify-center animate-fade-in font-mono text-black scrollHover text-xl"
