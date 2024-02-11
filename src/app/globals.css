@@ -29,10 +29,15 @@ body {
   }
 }
 
+.preventSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 .artifactWord {
   color: indianred;
   font-weight: bold;
-  /* cursor: pointer; */
 }
 
 .adaptivePadding {

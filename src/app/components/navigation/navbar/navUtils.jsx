@@ -10,7 +10,7 @@ const SmoothScrollLink = (props) => {
     return (
         <span 
             key={linkKey} 
-            className={className} 
+            className={`${className} preventSelect`} 
             onClick={() => scroll(targetId)}
             style={{cursor:"pointer"}}
         >
