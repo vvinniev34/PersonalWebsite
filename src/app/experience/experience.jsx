@@ -25,14 +25,14 @@ const ExperiencePage = () => {
         {
             title:"NLP Undergraduate Researcher",
             location:"Minneapolis, MN",
-            description:"",
+            description:"Minnesota NLP 🤖📝🔍",
             time:"October 2023 - Present",
             img:"experience/minnesota.png"
         },
         {
             title:"Software Developer Intern",
             location:"Madison, WI",
-            description:"Telehealth",
+            description:"Telehealth  📱💻🏥",
             time:"May 2023 - August 2023",
             img:"experience/epic_systems.jpg"
         }
