@@ -7,22 +7,22 @@
         padding: 20rem; 
       }
     @media (max-width: 1536px) {
-      padding: 15rem; 
+      padding: 18rem; 
     }
     @media (max-width: 1472px) {
-      padding: 12.5rem; 
+      padding: 15.5rem; 
     }
     @media (max-width: 1408px) {
-      padding: 10rem; 
+      padding: 13rem; 
     }
     @media (max-width: 1344px) {
-      padding: 7.5rem; 
+      padding: 10.5rem; 
     }
     @media (max-width: 1280px) {
-      padding: 5rem; 
+      padding: 8rem; 
     }
     @media (max-width: 1152px) {
-      padding: 2.5rem;
+      padding: 5.5rem;
     }
     @media (max-width: 1024px) {
       padding: 15%; 

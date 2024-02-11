@@ -1,6 +1,6 @@
 
 const SmoothScrollLink = (props) => {
-    const { key, className, href, targetId, children } = props
+    const { linkKey, className, href, targetId, children } = props
 
    const scroll = function (element_id) {
     const element = document.getElementById(element_id)
@@ -9,11 +9,9 @@ const SmoothScrollLink = (props) => {
 
     return (
         <span 
-            key={key} 
+            key={linkKey} 
             className={className} 
             onClick={() => scroll(targetId)}
-            // href={href} 
-            // as={targetId}
             style={{cursor:"pointer"}}
         >
             {children}

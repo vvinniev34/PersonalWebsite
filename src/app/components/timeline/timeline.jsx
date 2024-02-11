@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 export default function Timeline(props) {
     const { elements = [] } = props;
 
-    function TimelineElement(title, location, description, time, image = null) {
+    function TimelineElement(title, location, description, time, image = null, elementKey) {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -29,8 +29,8 @@ export default function Timeline(props) {
 
     return (
         <VerticalTimeline layout={"1-column-left"} lineColor={"indianred"}>
-            {elements.map(element => {
-                return TimelineElement(element.title, element.location, element.description, element.time, element.img)
+            {elements.map((element, i) => {
+                return TimelineElement(element.title, element.location, element.description, element.time, element.img, i)
             })}
             {/* <VerticalTimelineElement
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}

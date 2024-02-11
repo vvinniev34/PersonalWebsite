@@ -1,0 +1,60 @@
+
+.uofmn:hover {
+    color: #a44949;
+    cursor: pointer;
+}
+  
+.magicWand:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxMagicWand.png"), pointer;
+}
+
+.scratch:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxScratch.png"), pointer;
+}
+
+.speech:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxSpeech.png"), pointer;
+}
+
+.globe:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxGlobe.png"), pointer;
+}
+
+.fire:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxMatch.png"), pointer;
+}
+  
+.basketball:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxBasketball.png"), pointer;
+}
+
+.steak:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxSteak.png"), pointer;
+}
+
+.easterEgg:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxEasterEgg.png"), pointer;
+}
+
+.adventure:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxTreasureMap.png"), pointer;
+}
+
+.couch:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxCouch.png"), pointer;
+}
+
+.cremeBrulee:hover {
+    color: #a44949;
+    cursor: url("../../../public/about/cursorimages/32pxCremeBrulee.png"), pointer;
+}

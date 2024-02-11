@@ -3,6 +3,7 @@ import Header from "../components/headers/header.jsx"
 import SubHeader from "../components/headers/subheader.jsx"
 import NoCardSlidingDiv from "../components/divcontainers/slidingdiv/noCardSlidingDiv.jsx"
 import PageDivider from '../components/pagedivider/pagedivider.jsx'
+import styles from "./page.module.css"
 
 const colors = ["cadetblue", "lightsalmon", "salmon", "darkorange", "indianred", "darkcyan", "chocolate"]
 const brightcolors= ["brown", "indianred"]
@@ -12,9 +13,9 @@ const AboutPage = () => {
   const introduction = <div>I'm an aspiring Software Engineer based in Minneapolis. Welcome to my portfolio.</div>;
   
   const introArtifacts = ["🚀"]
-  const intro = <div>I'm a 3rd year Computer Science student at the <strong className="artifactWord">University of Minnesota</strong>. I love diving into new ways to make my code better, and for me, computer science isn't just a degree—it's a <strong className="artifactWord">lifelong adventure</strong> of learning. I'm on a mission to create something awesome, and my goal is to do it with a fantastic team that brings out the best in each other.<br/><br/><strong className="artifactWord">Let's make some coding magic together!</strong></div>
-  const background = <div>Back in 2017, I embarked on my coding journey by creating my first <strong className="artifactWord">Scratch</strong> game as part of a school introduction to code class. Admittedly, the game itself wasn't a masterpiece, but the joy of crafting an <strong className="artifactWord">Easter-egg</strong>-filled Flappy Bird experience, pouring in every bit of time to make it the best I could, left an indelible mark on me. Little did I know, that goofy Scratch game would <strong className="artifactWord">ignite</strong> a passion for coding and technology within me.<br/><br/>Fast forward to today, and I find myself kindling that passion through various projects. Currently, I'm immersed in <strong className="artifactWord">natural language</strong> research within my lab, delving into the intricate <strong className="artifactWord">world of code and technology</strong> with the same enthusiasm that started with that quirky Scratch game.</div>
-  const interests = <div>When I need to unplug, you can catch me in the kitchen whipping up recipes I found online. Whether it's a <strong className="artifactWord">crème brûlée</strong> or a classic <strong className="artifactWord">steak au poivre</strong>, I'm down to experiment. If you don't find me there, chances are that I'm at the gym, engaged in an intense <strong className="artifactWord">hoop sesh</strong>, or simply <strong className="artifactWord">lounging on my couch</strong>, indulging in a nostalgic binge-watch of my favorite childhood sitcoms.</div>
+  const intro = <div>I'm a 3rd year Computer Science student at the <span className={`artifactWord ${styles.uofmn}`}>University of Minnesota</span>. I love diving into new ways to make my code better, and for me, computer science isn't just a degree—it's a <span className={`artifactWord ${styles.adventure}`}>lifelong adventure</span> of learning. I'm on a mission to create something awesome, and my goal is to do it with a fantastic team that brings out the best in each other.<br/><br/><span className={`artifactWord ${styles.magicWand}`}>Let's make some coding magic together!</span></div>
+  const background = <div>Back in 2017, I embarked on my coding journey by creating my first <span className={`artifactWord ${styles.scratch}`}>Scratch</span> game as part of a school introduction to code class. Admittedly, the game itself wasn't a masterpiece, but the joy of crafting an <span className={`artifactWord ${styles.easterEgg}`}>Easter-egg</span>-filled Flappy Bird experience, pouring in every bit of time to make it the best I could, left an indelible mark on me. Little did I know, that goofy Scratch game would <span className={`artifactWord ${styles.fire}`}>ignite</span> a passion for coding and technology within me.<br/><br/>Fast forward to today, and I find myself kindling that passion through various projects. Currently, I'm immersed in <span className={`artifactWord ${styles.speech}`}>natural language</span> research within my lab, delving into the intricate <span className={`artifactWord ${styles.globe}`}>world of code and technology</span> with the same enthusiasm that started with that quirky Scratch game.</div>
+  const interests = <div>When I need to unplug, you can catch me in the kitchen whipping up recipes I found online. Whether it's a <span className={`artifactWord ${styles.cremeBrulee}`}>crème brûlée</span> or a classic <span className={`artifactWord ${styles.steak}`}>steak au poivre</span>, I'm down to experiment. If you don't find me there, chances are that I'm at the gym, engaged in an intense <span className={`artifactWord ${styles.basketball}`}>hoop sesh</span>, or simply <span className={`artifactWord ${styles.couch}`}>lounging on my couch</span>, indulging in a nostalgic binge-watch of my favorite childhood sitcoms.</div>
 
   function SlideIn(title, description, colorI, imgSrc, reverse=false, top=false, bottom=false) {
     return (
@@ -62,7 +63,7 @@ const AboutPage = () => {
           {/*1 2 1*/}
           <div className="w-[100%] bg-darkoffwhite flex flex-col items-center justify-center">
               {SlideIn("Hey, I'm Vincent!", intro, 1, "about/computer.png", false, true, false)}
-              {SlideIn("Some Background", background, 1, "about/flappy_bird.jpg", true)}
+              {SlideIn("Some Background", background, 1, "about/flappy_bird2.jpg", true)}
               {SlideIn("My Interests", interests, 1, "about/food.jpg", false, false, true)}
           </div>
 
