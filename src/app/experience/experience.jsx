@@ -49,7 +49,7 @@ const ExperiencePage = () => {
     return (
         <section 
             className="adaptivePadding flex bg-brown flex-col items-center justify-between" 
-            style={{paddingBottom:'4.5rem', paddingTop:'4.5rem'}}
+            style={{paddingBottom:'4.5rem', paddingTop:'4.5rem', background:"url(experience/concrete_stairs.jpg)", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}
             id="experience"
         >
             <div className="flex space-y-20 w-full">

@@ -190,25 +190,45 @@ body {
 
 .projectCard:hover:before {
   background-position: 100% 100%;
+  transform: translateY(0.125rem);
 }
 
 .projectCard:before {
   background: linear-gradient(130deg,
   #f6f2ee 0% 33%,
   #faeeee 70%,
-  pink 87%,
-    #F88379 100%);
+  lightpink 87%,
+  #faeeee 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
   height: 100%;
   position: absolute;
-  transition: background-position 500ms ease, transform 500ms ease;
+  transition: background-position .5s ease, transform .5s ease;
   width: 100%;
   border-radius: 0.5rem;
 }
 
-.timelineHover:hover {
-  background: #dc8c8c !important;
+.timelineHover:hover:before {
+  background-position: 100% 100% !important;
   transform: translateY(0.125rem);
+}
+
+.timelineHover:before {
+  background: linear-gradient(130deg,
+  #f6f2ee 0 33%,
+  #faeeee 70%,
+  #ffb6c1 87%,
+  #faeeee) !important;
+  background-position: 0 0 !important;
+  background-size: 300% 300% !important;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: background-position .5s ease, transform .5s ease;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
