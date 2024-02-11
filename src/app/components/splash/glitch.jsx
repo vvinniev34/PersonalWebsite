@@ -64,18 +64,20 @@ export function LearnMoreScroll() {
 	return (
 		<div 
 			className="flex items-center justify-center" 
-			style={{position:"absolute", height :"9%", bottom:"5.5rem"}}
-		>
-			<div 
-				className="flex flex-col items-center justify-center animate-fade-in font-mono text-black scrollHover text-xl"
-				style={{cursor:"pointer", maxHeight:"80%"}}
-				onClick={() => scrollDown()}
-			>
-				<div>Learn More</div>
-				<div
-					style={{width:"32px", cursor:"pointer"}}
+			style={{position:"absolute", height :"6rem", bottom:"5.5rem"}}
+		>	
+			<div className='pulse' style={{padding:"0.75rem", paddingTop:"0.5rem", paddingBottom:"0.5rem"}}>
+				<div 
+					className="flex flex-col items-center justify-center animate-fade-in font-mono text-black scrollHover text-xl"
+					style={{cursor:"pointer", maxHeight:"4rem"}}
+					onClick={() => scrollDown()}
 				>
-					<ArrowSVG/>
+					<div>Learn More</div>
+					<div
+						style={{width:"32px", cursor:"pointer"}}
+					>
+						<ArrowSVG/>
+					</div>
 				</div>
 			</div>
 		</div>

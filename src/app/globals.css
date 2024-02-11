@@ -75,16 +75,16 @@ body {
 }
 
 .scrollHover {
-  min-height: 80%;
-  max-height: 80%;
+  min-height: 4rem;
+  max-height: 4rem;
   transition: min-height 0.3s linear; 
 }
 
 .scrollHover:hover {
   color: #646464;
   fill: #646464;
-  min-height: 100%;
-  max-height: 100%;
+  min-height: 5.25rem;
+  max-height: 5.25rem;
   justify-content: space-between;
 }
 
@@ -179,3 +179,17 @@ body {
   background: #dc8c8c !important;
   transform: translateY(0.125rem);
 }
+
+.pulse:hover {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+  }
+}
+
