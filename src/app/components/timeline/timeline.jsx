@@ -10,7 +10,7 @@ export default function Timeline(props) {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work "
-                // style={{margin:"2.5em 0"}}
+                style={{margin:"2em 0"}}
                 textClassName="timelineHover"
                 // contentStyle={{ background: '#e19d9d', color: '#fff' }}
                 contentStyle={{ background: 'rgba(0,0,0,0)'/*'#f6f2ee'*/, color: 'rgb(75 85 99)' }}
@@ -44,7 +44,7 @@ export default function Timeline(props) {
     }
 
     return (
-        <VerticalTimeline layout={"1-column-left"} lineColor={"indianred"}>
+        <VerticalTimeline layout={"1-column-left"} lineColor={"indianred"} style={{padding:"0"}}>
             {elements.map((element, i) => {
                 return TimelineElement(element.title, element.location, element.description, element.time, element.img, i)
             })}

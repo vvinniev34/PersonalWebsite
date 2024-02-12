@@ -3,6 +3,7 @@ import Header from "../components/headers/header.jsx"
 import SubHeader from "../components/headers/subheader.jsx"
 import PageDivider from "../components/pagedivider/pagedivider.jsx";
 import Timeline from "../components/timeline/timeline.jsx"
+import BearToast from "../components/3dmodels/beartoast.jsx"
 import "../globals.css"
 
 const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
@@ -25,14 +26,14 @@ const ExperiencePage = () => {
         {
             title:"NLP Undergraduate Researcher",
             location:"Minneapolis, MN",
-            description:"Minnesota NLP 🤖📝🔍",
+            description:"🤖📝🔍 Minnesota NLP",
             time:"October 2023 - Present",
             img:"experience/minnesota.png"
         },
         {
             title:"Software Developer Intern",
             location:"Madison, WI",
-            description:"Telehealth  📱💻🏥",
+            description:"📱💻🏥 Telehealth",
             time:"May 2023 - August 2023",
             img:"experience/epic_systems.jpg"
         }
@@ -60,20 +61,23 @@ const ExperiencePage = () => {
 
                     <PageDivider marginBottom={0}></PageDivider>
                     <div 
-                        className="w-[100%] bg-darkoffwhite flex flex-row justify-between" 
+                        className="w-[100%] bg-darkoffwhite flex items-center justify-center " 
                         style={{paddingTop:"2.5%", paddingBottom:"2.5%"}}
                     >
-                        <div 
-                            className="w-5/12"
-                            style={{marginLeft:"4.16%"}}
-                        >
-                            <SubHeader title={"Education"} description={TimelineElement(education)} color={"indianred"}></SubHeader>
-                        </div>
-                        <div 
-                            className="w-7/12"
-                            style={{marginRight:"4.16%"}}
-                        >
-                            <SubHeader title={"Work"} description={TimelineElement(workExperience)} color={"indianred"}></SubHeader>
+                        <div className="w-[90%] flex flex-row justify-between" style={{padding:'1.25rem'}}>
+                            <div 
+                                className="w-5/12 flex flex-col"
+                                // style={{marginLeft:"4.16%"}}
+                            >
+                                <SubHeader title={"Education"} description={TimelineElement(education)} color={"indianred"}></SubHeader>
+                                <BearToast/>
+                            </div>
+                            <div 
+                                // className="w-7/12"
+                                style={{/*marginRight:"4.16%"*/ width:"55%"}}
+                            >
+                                <SubHeader title={"Work"} description={TimelineElement(workExperience)} color={"indianred"}></SubHeader>
+                            </div>
                         </div>
                     </div>
                     <PageDivider marginBottom={2.5}></PageDivider>

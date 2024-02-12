@@ -2,22 +2,18 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OrbitControls } from "@react-three/drei";
-import { Mesh } from "three";
-
+import { OrbitControls, Center } from "@react-three/drei";
 
 function MeshComponent() {
-  // const fileUrl = "nekomori_toast_bear/scene.gltf"
   const fileUrl = "computer_terranium/scene.gltf"
   const mesh = useRef();
   const gltf = useLoader(GLTFLoader, fileUrl);
 
   useFrame(() => {
-    const rotationFactor = 0.001;
+    const rotationFactor = 0.005;
     mesh.current.rotation.y = scrollY * rotationFactor;
   });
 
-  const scrollRef = useRef(0);
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -39,13 +35,17 @@ function MeshComponent() {
 export function BearToast() {
   return (
     <div className='flex justify-center items-center h-[100%] w-full'>
-      <Canvas className='h-[100%]'>
+      <Canvas className='h-[100%]' style={{height:"14rem"}} camera={{ position: [0, 3.5, 5] }}>
+        <Center>
           <OrbitControls 
-            enableZoom={false}
-            minDistance={0}
+            enablePan={false}
+            minDistance={2}
+            maxDistance={3}
+            // target={[10, 0, 0]}
           />
           <ambientLight />
           <MeshComponent />
+        </Center>
       </Canvas>
     </div>
   );
