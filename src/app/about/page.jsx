@@ -55,7 +55,7 @@ const AboutPage = () => {
     >
       <div 
         style={{
-          background:'linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52), url(oceanunderwatersurface.png)', 
+          background:'linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52), url(oceanunderwatersurface.webp)', 
           backgroundSize: "cover", 
           backgroundRepeat: "no-repeat", 
           backgroundPosition: "center", 
