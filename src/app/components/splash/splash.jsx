@@ -24,7 +24,7 @@ const Splash = () => {
 			<div style={{ position: "fixed", width:"100%", height:"100vh", zIndex:-1 }}>
 				<Image 
 					src="/sky_ocean_surface_brightened.png" 
-					description="" 
+					alt="bright sky over ocean surface" 
 					width="100vh" 
 					height="100vh" 
 					layout="fill" 
