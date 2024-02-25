@@ -20,7 +20,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-position: center;
   background-color:rgb(246 247 242);
-  min-width: 700px;
+  /* min-width: 700px; */
 }
 
 @layer utilities {

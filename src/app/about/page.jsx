@@ -2,6 +2,7 @@ import React from "react";
 import SubHeader from "../components/headers/subheader.jsx"
 import NoCardSlidingDiv from "../components/divcontainers/slidingdiv/noCardSlidingDiv.jsx"
 import styles from "./page.module.css"
+import Image from 'next/image';
 
 const AboutPage = () => {
   const intro = <div>I'm a 3rd year Computer Science student at the <span className={`artifactWord ${styles.uofmn}`}>University of Minnesota</span>. I love diving into new ways to make my code better, and for me, computer science isn't just a degree—it's a <span className={`artifactWord ${styles.adventure}`}>lifelong adventure</span> of learning. I'm on a mission to create something awesome, and my goal is to do it with a fantastic team that brings out the best in each other.<br/><br/><span className={`artifactWord ${styles.magicWand}`}>Let's make some coding magic together!</span></div>
@@ -31,7 +32,9 @@ const AboutPage = () => {
               className="m-0 bg-offwhite overflow-hidden rounded-lg"
               style={reverse ? {width:"42.5%"} : {width:"55%"}}
             >
-              <img src={imgSrc} alt="image" className="h-[100%] object-cover zoom-on-hover"/>
+              <div className="h-[100%] object-cover zoom-on-hover">
+                <Image src={imgSrc} alt="about image" style={{ height:"100%", objectFit:"cover", objectPosition:"center" }}/>
+              </div>
             </div>
           </NoCardSlidingDiv>
         </div>
@@ -50,17 +53,30 @@ const AboutPage = () => {
     >
       <div 
         style={{
-          background:'linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52), url(oceanunderwatersurface.webp)', 
-          backgroundSize: "cover", 
-          backgroundRepeat: "no-repeat", 
-          backgroundPosition: "center", 
-          width: "100%", 
-          minHeight: "100vh", 
           position: "absolute", 
           marginTop: "-4.5rem", 
-          marginLeft:"-40%"
+          marginLeft:"-40%",
+          width:"100%",
+          minHeight:"100vh"
         }}
-      />
+      >
+        <div 
+          style={{ 
+            background:'linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52)',
+            width:"100%",
+            height:"100%",
+            position:"absolute",
+            zIndex:1
+          }}
+        />
+        <Image 
+          src="/oceanunderwatersurface.png"
+          alt="ocean underwater surface"
+          layout="fill" 
+					objectFit="cover" 
+					objectPosition="center"
+        />
+      </div>
       <div 
         className="flex space-y-20 w-full"
         style={{
@@ -68,16 +84,16 @@ const AboutPage = () => {
           right: 0,
           position: "relative",
           paddingRight: "15%",
+          zIndex:1
         }}
       >
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           {/*1 2 1*/}
           <div className="w-[100%] flex flex-col items-center justify-center">
-              {SlideIn("Hey, I'm Vincent!", intro, "about/computer.png", false, true, false)}
-              {SlideIn("Some Background", background, "about/flappy_bird2.jpg", true)}
-              {SlideIn("My Interests", interests, "about/food.jpg", false, false, true)}
+              {SlideIn("Hey, I'm Vincent!", intro, "/about/computer.png", false, true, false)}
+              {SlideIn("Some Background", background, "/about/flappy_bird2.jpg", true)}
+              {SlideIn("My Interests", interests, "/about/food.jpg", false, false, true)}
           </div>
-
         </div>
       </div>
     </section>
