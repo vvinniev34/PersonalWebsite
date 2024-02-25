@@ -1,9 +1,7 @@
 
 export default function TertiaryHeader(props) {
     const { title, description = "", centered = false, color = "black" } = props
-    if (!title) {
-      return null
-    }
+
     return (
       <div className={`${centered ? 'text-center' : 'w-full'}`} style={{color:color}}>
         {title && (

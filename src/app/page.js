@@ -1,16 +1,36 @@
 import Splash from "./components/splash/splash";
 import AboutPage from "./about/page";
 import ExperiencePage from "./experience/experience"
-import ProjectPage from "./projects/page";
+import SkillsPage from "./skills/page";
+import ProjectPage from "./projects/page"
 import Footer from "./components/footer/footer";
+
+import Featured from "./about/possible";
+
+import VideoComponent from "./components/video/scrollingVideo"
+
+import GlowingCursorContainer from "./components/divcontainers/glowingCursor"
+import SideBar from "./components/navigation/sideBar"
 
 export default function Home() {
   return (
       <>
         <Splash/>
-        <AboutPage/>
-        <ExperiencePage/>
-        <ProjectPage/>
+        <div className="flex featured">
+          <SideBar/>
+          <div className="w-3/5 overflow-auto">
+            <AboutPage/>
+            {/* <Featured/> */}
+
+            <ExperiencePage/>
+            <GlowingCursorContainer>
+              <SkillsPage/>
+            
+              <ProjectPage/>
+              {/* <VideoComponent/> */}
+            </GlowingCursorContainer>
+          </div>
+        </div>
         <Footer/>
       </>
   );

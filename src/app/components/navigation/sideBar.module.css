@@ -1,0 +1,10 @@
+.contactSVG {
+    width:4rem;
+    padding-right:1rem;
+    cursor:pointer;
+    fill: white;
+}
+
+.contactSVG:hover path {
+    fill:lightblue
+}

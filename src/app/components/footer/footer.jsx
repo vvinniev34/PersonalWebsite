@@ -6,7 +6,7 @@ export default function Footer(){
     return (
         <div 
             className={`w-[100%] bg-darkbrown ${styles.paddingFooter}`} 
-            style={{paddingTop:"3rem", paddingBottom:"3rem"}}
+            style={{paddingTop:/*"3rem"*/"12rem", paddingBottom:"3rem"}}
         >
             <Contact></Contact>
         </div>

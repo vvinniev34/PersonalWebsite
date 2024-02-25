@@ -41,7 +41,6 @@ export function BearToast() {
             enablePan={false}
             minDistance={2}
             maxDistance={3}
-            // target={[10, 0, 0]}
           />
           <ambientLight />
           <MeshComponent />

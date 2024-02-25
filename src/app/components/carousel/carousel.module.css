@@ -75,11 +75,12 @@
 }
 
 .embla__button path {
-    fill: black;
+    fill: white;
 }
 
 .embla__button:hover path {
-    fill: #9ca3af
+    /* fill: #9ca3af */
+    fill: lightblue;
 }
 
 .embla__buttons {

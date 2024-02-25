@@ -3,16 +3,13 @@ import Header from "../components/headers/header.jsx"
 import SubHeader from "../components/headers/subheader.jsx"
 import PageDivider from "../components/pagedivider/pagedivider.jsx";
 import Timeline from "../components/timeline/timeline.jsx"
-import BearToast from "../components/3dmodels/beartoast.jsx"
+// import BearToast from "../components/3dmodels/beartoast.jsx"
 import "../globals.css"
 
 const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
 const brightcolors = ["blueviolet", "deeppink", "limegreen"]
 
 const ExperiencePage = () => {
-    const title = "Experience"
-    const description = "Timeline of My Career"
-
     const education = [
         {
             title:"University of Minnesota",
@@ -49,38 +46,42 @@ const ExperiencePage = () => {
 
     return (
         <section 
-            className="adaptivePadding flex bg-brown flex-col items-center justify-between" 
-            style={{paddingBottom:'4.5rem', paddingTop:'4.5rem', background:"url(experience/concrete_stairs.jpg)", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}
+            className="section flex flex-col items-center justify-between"
+            style={{
+                paddingBottom:'4.5rem', 
+                paddingTop:'4.5rem',
+            }}
             id="experience"
         >
-            <div className="flex space-y-20 w-full">
+            <div 
+                className="flex space-y-20 w-full"
+                style={{
+                    width: "100%",
+                    right: 0,
+                    position: "relative",
+                    paddingRight: "15%",
+                }}
+            >
                 <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
-                    <div className="w-auto h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
-                        <Header centered={true} title={title} description={description} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></Header>
-                    </div>
-
-                    <PageDivider marginBottom={0}></PageDivider>
                     <div 
-                        className="w-[100%] bg-darkoffwhite flex items-center justify-center " 
+                        className="w-[100%] flex items-center justify-center " 
                         style={{paddingTop:"2.5%", paddingBottom:"2.5%"}}
                     >
                         <div className="w-[90%] flex flex-row justify-between" style={{padding:'1.25rem'}}>
                             <div 
                                 className="w-5/12 flex flex-col"
-                                // style={{marginLeft:"4.16%"}}
                             >
-                                <SubHeader title={"Education"} description={TimelineElement(education)} color={"indianred"}></SubHeader>
-                                <BearToast/>
+                                <SubHeader title={"Education"} description={TimelineElement(education)} color={"#f6f7f2"}></SubHeader>
+                                {/* <BearToast/> */}
                             </div>
                             <div 
                                 // className="w-7/12"
-                                style={{/*marginRight:"4.16%"*/ width:"55%"}}
+                                style={{width:"55%"}}
                             >
-                                <SubHeader title={"Work"} description={TimelineElement(workExperience)} color={"indianred"}></SubHeader>
+                                <SubHeader title={"Work"} description={TimelineElement(workExperience)} color={"#f6f7f2"}></SubHeader>
                             </div>
                         </div>
                     </div>
-                    <PageDivider marginBottom={2.5}></PageDivider>
                 </div>
             </div>
         </section>

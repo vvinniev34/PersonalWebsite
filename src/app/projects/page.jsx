@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/headers/header.jsx";
 import SubHeader from "../components/headers/subheader.jsx";
 import ProjectContainer from "../components/projectcontainer/projectcontainer.jsx";
-import PageDivider from "../components/pagedivider/pagedivider";
+import PageDivider from "../components/pagedivider/pagedivider.jsx";
 import Carousel from "../components/carousel/carousel.jsx"
 import StackSVG from "../components/projectcontainer/svgs.jsx"
 import "../globals.css";
@@ -11,8 +11,6 @@ const colors = ["darkorange", "burlywood", "indianred", "tan", "cadetblue", "lig
 const brightcolors = ["blueviolet", "deeppink", "dullyellow"]
 
 const ProjectPage = () => {
-    const title = "Projects";
-    const description = "A growing collection of my projects, past and ongoing"
     const background = "projects/project_header.jpg"
 
     const projects = [
@@ -44,24 +42,48 @@ const ProjectPage = () => {
     
     return (
         <section 
-            className={"adaptivePadding flex bg-offwhitemain flex-col items-center justify-between"/*min-h-screen*/} 
-            style={{paddingBottom:'4.5rem', paddingTop:'4.5rem'}}
+            className={"section flex flex-col items-center justify-between"} 
+            style={{
+                paddingBottom:'4.5rem', 
+                paddingTop:'4.5rem'
+            }}
             id="projects"
         >
-            <div className="flex space-y-20 w-full">
+            <div
+                style={{
+                    background:"url(submarine.png)", 
+                    backgroundSize: "cover", 
+                    backgroundRepeat: "no-repeat", 
+                    backgroundPosition: "center",
+                    width: "100%", 
+                    minHeight: "100vh", 
+                    position: "absolute", 
+                    marginLeft:"-40%",
+                    marginTop:"-4.5rem"
+                }}
+            />
+            <div 
+                className="flex space-y-20 w-full" 
+                style={{
+                    width: "100%",
+                    right: 0,
+                    position: "relative",
+                    paddingRight: "15%",
+                }}
+            >
                 <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
-                    <div className="w-auto h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
-                        <Header centered={true} title={title} description={description} color={"brown"}></Header>
-                    </div>
+                    {/* <div className="w-auto h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
+                        <Header centered={true} title={title} description={description} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></Header>
+                    </div> */}
 
-                    <PageDivider marginBottom={0}></PageDivider>
+                    {/* <PageDivider marginBottom={0}></PageDivider> */}
 
                     <div 
-                        className="w-[100%] bg-darkoffwhite flex items-center justify-center p-8" 
+                        className="w-[100%] flex items-center justify-center p-8" 
                         style={{paddingBottom:0}}
                     >
                         <div className="w-[90%] overflow-hidden">
-                            <SubHeader title={"Completed"} color={colors[2]}></SubHeader>
+                            <SubHeader title={"Completed"} color={"#f6f7f2"}></SubHeader>
 
                             <div className="w-full rounded-lg shadow-lg">
                                 <Carousel projectList={projects}></Carousel>
@@ -69,7 +91,7 @@ const ProjectPage = () => {
                         </div>
                     </div>
 
-                    <PageDivider marginBottom={2.5}></PageDivider>
+                    {/* <PageDivider marginBottom={2.5}></PageDivider> */}
                 </div>
             </div>
         </section>

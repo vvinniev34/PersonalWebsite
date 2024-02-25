@@ -34,12 +34,18 @@ module.exports = {
 		"burlywood": "#deb887",
 		"brown": "#a52a2a",
 		"steelblue": "#4682b4",
+		"lightblue": "#ADD8E6",
 
 		"offwhitemain":"#f6f7f2",
 		"darkoffwhite":"#e6e6dd",
 		"darkbrown": "#222",
 		"text-color":"#23282e",
 		"text-muted":"#4f5358",
+
+		"sunlight-zone":"#a9ced7",
+		"twilight-zone-start":"#018cad",
+		"twilight-zone-end":"#013148",
+		"deep":"#0f0f0f"
 	  },
       animation: {
 				"fade-in": "fade-in 3s ease-in-out forwards",

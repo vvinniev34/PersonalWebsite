@@ -1,0 +1,22 @@
+.cursorGlow {
+    position: fixed;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.30) 0%,
+      rgba(255, 255, 255, 0) 65%
+    );
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cursorGlow.visible {
+    opacity: 0.75;
+}

@@ -9,12 +9,8 @@ const colors = ["cadetblue", "lightsalmon", "salmon", "darkorange", "indianred",
 const brightcolors= ["brown", "indianred"]
 
 const AboutPage = () => {
-  const title = "About";
-  const introduction = <div>I'm an aspiring Software Engineer based in Minneapolis. Welcome to my portfolio.</div>;
-  
-  const introArtifacts = ["🚀"]
   const intro = <div>I'm a 3rd year Computer Science student at the <span className={`artifactWord ${styles.uofmn}`}>University of Minnesota</span>. I love diving into new ways to make my code better, and for me, computer science isn't just a degree—it's a <span className={`artifactWord ${styles.adventure}`}>lifelong adventure</span> of learning. I'm on a mission to create something awesome, and my goal is to do it with a fantastic team that brings out the best in each other.<br/><br/><span className={`artifactWord ${styles.magicWand}`}>Let's make some coding magic together!</span></div>
-  const background = <div>Back in 2017, I embarked on my coding journey by creating my first <span className={`artifactWord ${styles.scratch}`}>Scratch</span> game as part of a school introduction to code class. Admittedly, the game itself wasn't a masterpiece, but the joy of crafting an <span className={`artifactWord ${styles.easterEgg}`}>Easter-egg</span>-filled Flappy Bird experience, pouring in every bit of time to make it the best I could, left an indelible mark on me. Little did I know, that goofy Scratch game would <span className={`artifactWord ${styles.fire}`}>ignite</span> a passion for coding and technology within me.<br/><br/>Fast forward to today, and I find myself kindling that passion through various projects. Currently, I'm immersed in <span className={`artifactWord ${styles.speech}`}>natural language</span> research within my lab, delving into the intricate <span className={`artifactWord ${styles.globe}`}>world of code and technology</span> with the same enthusiasm that started with that quirky Scratch game.</div>
+  const background = <div>Back in 2017, I embarked on my coding journey by creating my first <span className={`artifactWord ${styles.scratch}`}>Scratch</span> game as part of a school introduction class. Admittedly, the game itself wasn't a masterpiece, but the joy of crafting an <span className={`artifactWord ${styles.easterEgg}`}>Easter-egg</span>-filled Flappy Bird experience, pouring in every bit of time to make it the best I could, left an indelible mark on me. Little did I know, that goofy Scratch game would <span className={`artifactWord ${styles.fire}`}>ignite</span> a passion for coding and technology within me.<br/><br/>Fast forward to today, and I find myself kindling that passion through various projects. Currently, I'm immersed in <span className={`artifactWord ${styles.speech}`}>natural language</span> research within my lab, delving into the intricate <span className={`artifactWord ${styles.globe}`}>world of code and technology</span> with the same enthusiasm that started with that quirky Scratch game.</div>
   const interests = <div>When I need to unplug, you can catch me in the kitchen whipping up recipes I found online. Whether it's a <span className={`artifactWord ${styles.cremeBrulee}`}>crème brûlée</span> or a classic <span className={`artifactWord ${styles.steak}`}>steak au poivre</span>, I'm down to experiment. If you don't find me there, chances are that I'm at the gym, engaged in an intense <span className={`artifactWord ${styles.basketball}`}>hoop sesh</span>, or simply <span className={`artifactWord ${styles.couch}`}>lounging on my couch</span>, indulging in a nostalgic binge-watch of my favorite childhood sitcoms.</div>
 
   function SlideIn(title, description, colorI, imgSrc, reverse=false, top=false, bottom=false) {
@@ -32,7 +28,8 @@ const AboutPage = () => {
               <SubHeader 
                 title={title} 
                 description={description} 
-                color={brightcolors[colorI]}
+                color={'#f6f7f2'}
+                descriptionColor={'#f6f7f2'}
               />
             </div>
             <div 
@@ -49,25 +46,43 @@ const AboutPage = () => {
 
   return (
     <section 
-      className="adaptivePadding flex bg-offwhitemain flex-col items-center justify-between" 
-      style={{paddingBottom:'4.5rem', paddingTop:'4.5rem'}}
+      className="section flex flex-col items-center justify-between" 
+      style={{
+        paddingBottom:'4.5rem', 
+        paddingTop:'4.5rem',
+      }}
       id="about"
     >
-      <div className="flex space-y-20 w-full">
+      <div 
+        style={{
+          background:'linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52), url(oceanunderwatersurface.png)', 
+          backgroundSize: "cover", 
+          backgroundRepeat: "no-repeat", 
+          backgroundPosition: "center", 
+          width: "100%", 
+          minHeight: "100vh", 
+          position: "absolute", 
+          marginTop: "-4.5rem", 
+          marginLeft:"-40%"
+        }}
+      />
+      <div 
+        className="flex space-y-20 w-full"
+        style={{
+          width: "100%",
+          right: 0,
+          position: "relative",
+          paddingRight: "15%",
+        }}
+      >
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
-          <div className="w-full h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
-            <Header centered={true} title={title} description={introduction} color={brightcolors[0]}></Header>
-          </div>
-
-          <PageDivider marginBottom={0}></PageDivider>
           {/*1 2 1*/}
-          <div className="w-[100%] bg-darkoffwhite flex flex-col items-center justify-center">
+          <div className="w-[100%] flex flex-col items-center justify-center">
               {SlideIn("Hey, I'm Vincent!", intro, 1, "about/computer.png", false, true, false)}
               {SlideIn("Some Background", background, 1, "about/flappy_bird2.jpg", true)}
               {SlideIn("My Interests", interests, 1, "about/food.jpg", false, false, true)}
           </div>
 
-          <PageDivider marginBottom={2.5}></PageDivider>
         </div>
       </div>
     </section>

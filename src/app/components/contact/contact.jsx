@@ -8,23 +8,23 @@ import styles from "./svgs.module.css"
 const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
 const brightcolors = ["blueviolet", "deeppink"]
 
+const github = "https://github.com/vvinniev34"
+export function handleGithubClick() {
+    window.open(github, '_blank');
+}
+
+const linkedin = "https://www.linkedin.com/in/vincent-liu-1271e"
+export function handleLinkedInClick() {
+    window.open(linkedin, '_blank');
+}
+
+const email = "liu01841@umn.edu"
+export function handleEmailClick() {
+    const mailtoLink = `mailto:${email}`;
+    window.location.href = mailtoLink;
+}
+
 const Contact = () => {
-    const github = "https://github.com/vvinniev34"
-    function handleGithubClick() {
-        window.open(github, '_blank');
-    }
-
-    const linkedin = "https://www.linkedin.com/in/vincent-liu-1271e"
-    function handleLinkedInClick() {
-        window.open(linkedin, '_blank');
-    }
-
-    const email = "liu01841@umn.edu"
-    function handleEmailClick() {
-        const mailtoLink = `mailto:${email}`;
-        window.location.href = mailtoLink;
-    }
-
     return (
         <SubHeader 
             title="Contact"
@@ -100,6 +100,7 @@ const Contact = () => {
               </>
             }
             color={"white"}
+            descriptionColor={"white"}
         />
     );
 }
