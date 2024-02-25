@@ -1,12 +1,13 @@
 "use client"
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import Image from 'next/image';
 import 'react-vertical-timeline-component/style.min.css';
 
 export default function Timeline(props) {
     const { elements = [] } = props;
 
-    function TimelineElement(title, location, description, time, image = null, elementKey) {
+    function TimelineElement(title, location, description, time, image = null) {
         return (
             <VerticalTimelineElement
                 className="vertical-timeline-element--work "
@@ -18,7 +19,8 @@ export default function Timeline(props) {
                 iconStyle={{ background: '#fff', color: '#fff', overflow: "hidden" }}
                 icon={image ? 
                     <div className='w-full h-full flex items-center justify-center bg-white'>
-                        <img src={image} alt='' className='object-cover'/>
+                        <Image src={image} alt='timeline icon' style={{ objectFit:"cover", objectPosition:"center" }}/>
+                        {/* <img src={image} alt='' className='object-cover'/> */}
                     </div> : {}}
             >
                 <h3 
