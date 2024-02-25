@@ -1,13 +1,4 @@
-"use client"
-import React, { useState, useEffect } from "react";
-import Header from "../components/headers/header.jsx"
-import SubHeader from "../components/headers/subheader.jsx"
-import NoCardSlidingDiv from "../components/divcontainers/slidingdiv/noCardSlidingDiv.jsx"
-import PageDivider from '../components/pagedivider/pagedivider.jsx'
-import styles from "./page.module.css"
-
-const colors = ["cadetblue", "lightsalmon", "salmon", "darkorange", "indianred", "darkcyan", "chocolate"]
-const brightcolors= ["brown", "indianred"]
+import React from "react";
 
 const SkillsPage = () => {
   return (

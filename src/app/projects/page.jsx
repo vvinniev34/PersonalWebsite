@@ -1,17 +1,13 @@
 import React from "react";
-import Header from "../components/headers/header.jsx";
 import SubHeader from "../components/headers/subheader.jsx";
 import ProjectContainer from "../components/projectcontainer/projectcontainer.jsx";
-import PageDivider from "../components/pagedivider/pagedivider.jsx";
 import Carousel from "../components/carousel/carousel.jsx"
 import StackSVG from "../components/projectcontainer/svgs.jsx"
 import "../globals.css";
 
 const colors = ["darkorange", "burlywood", "indianred", "tan", "cadetblue", "lightsalmon", "darkcyan", "chocolate"]
-const brightcolors = ["blueviolet", "deeppink", "dullyellow"]
 
 const ProjectPage = () => {
-    const background = "projects/project_header.jpg"
 
     const projects = [
         <ProjectContainer 
@@ -72,12 +68,6 @@ const ProjectPage = () => {
                 }}
             >
                 <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
-                    {/* <div className="w-auto h-auto pt-5" style={{paddingLeft:"1rem", paddingRight:"1rem"}}>
-                        <Header centered={true} title={title} description={description} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></Header>
-                    </div> */}
-
-                    {/* <PageDivider marginBottom={0}></PageDivider> */}
-
                     <div 
                         className="w-[100%] flex items-center justify-center p-8" 
                         style={{paddingBottom:0}}
@@ -91,7 +81,6 @@ const ProjectPage = () => {
                         </div>
                     </div>
 
-                    {/* <PageDivider marginBottom={2.5}></PageDivider> */}
                 </div>
             </div>
         </section>

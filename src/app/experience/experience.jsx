@@ -1,13 +1,8 @@
 import React from "react";
-import Header from "../components/headers/header.jsx"
 import SubHeader from "../components/headers/subheader.jsx"
-import PageDivider from "../components/pagedivider/pagedivider.jsx";
 import Timeline from "../components/timeline/timeline.jsx"
 // import BearToast from "../components/3dmodels/beartoast.jsx"
 import "../globals.css"
-
-const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
-const brightcolors = ["blueviolet", "deeppink", "limegreen"]
 
 const ExperiencePage = () => {
     const education = [
@@ -75,7 +70,6 @@ const ExperiencePage = () => {
                                 {/* <BearToast/> */}
                             </div>
                             <div 
-                                // className="w-7/12"
                                 style={{width:"55%"}}
                             >
                                 <SubHeader title={"Work"} description={TimelineElement(workExperience)} color={"#f6f7f2"}></SubHeader>

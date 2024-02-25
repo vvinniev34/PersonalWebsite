@@ -30,23 +30,8 @@ const GlowingCursorContainer = ( props ) => {
         };
     }, []);
 
-    // const handleMouseEnter = () => {
-    //     setIsHovered(true);
-    // };
-
-    // const handleMouseLeave = () => {
-    //     setIsHovered(false);
-    // };
-
-    
-      
-
-
     return (
-        <div
-            // onMouseEnter={handleMouseEnter}
-            // onMouseLeave={handleMouseLeave}
-        >
+        <div>
             {children}
             <div
                 className={`${styles.cursorGlow} ${isBetweenSections ? styles.visible : ""}`}
