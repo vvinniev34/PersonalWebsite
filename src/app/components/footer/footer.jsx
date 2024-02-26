@@ -5,7 +5,7 @@ import styles from "./footer.module.css"
 export default function Footer(){
     return (
         <div 
-            className={`w-[100%] bg-darkbrown ${styles.paddingFooter}`} 
+            className={`w-[100%] bg-darkbrown ${styles.paddingFooter} sidebarLeftPadding`} 
             style={{paddingTop:"3rem", paddingBottom:"3rem", position:"relative"}}
         >
             <Contact></Contact>
