@@ -72,12 +72,12 @@ const ProjectPage = () => {
                 />
             </div>
             <div 
-                className="flex space-y-20 w-full" 
+                className="flex space-y-20 w-full featuredRightPadding" 
                 style={{
                     width: "100%",
                     right: 0,
                     position: "relative",
-                    paddingRight: "15%",
+                    // paddingRight: "15%",
                     zIndex: 1
                 }}
             >

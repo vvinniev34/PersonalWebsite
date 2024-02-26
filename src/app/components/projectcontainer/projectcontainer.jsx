@@ -15,7 +15,7 @@ const ProjectContainer = (props) => {
                     (svg ? <div className="h-full zoom-on-hover">{svg}</div> : "Image Placeholder")}
             </div>
             <div className="w-[55%] mr-[2.5%] mt-[2.5%] mb-[2.5%]" style={{zIndex:1}}>
-                <TertiaryHeader title={title} description={description} color={"#f6f7f2"}/>
+                <TertiaryHeader title={title} description={description} color={"rgb(75 85 99)"}/>
             </div>
         </div>
     );

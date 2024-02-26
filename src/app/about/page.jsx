@@ -19,7 +19,8 @@ const AboutPage = () => {
         <div className="w-[90%]">
           <NoCardSlidingDiv reverse={reverse}>
             <div 
-              style={reverse ? {marginLeft:"2.5%", width:"55%"} : {marginRight:"2.5%", width:"42.5%"}}
+              className={reverse ? "reverseTextVisiblityByWindow" : "textVisiblityByWindow"}
+              // style={reverse ? {marginLeft:"2.5%", width:"55%"} : {marginRight:"2.5%", width:"42.5%"}}
             >
               <SubHeader 
                 title={title} 
@@ -29,8 +30,8 @@ const AboutPage = () => {
               />
             </div>
             <div 
-              className="m-0 bg-offwhite overflow-hidden rounded-lg"
-              style={reverse ? {width:"42.5%"} : {width:"55%"}}
+              className={`m-0 bg-offwhite overflow-hidden rounded-lg ${reverse ? "reverseImageVisiblityByWindow" : "imageVisiblityByWindow"}`}
+              // style={reverse ? {width:"42.5%"} : {width:"55%"}}
             >
               <div className="h-[100%] object-cover zoom-on-hover">
                 <Image src={imgSrc} alt="about image" style={{ height:"100%", objectFit:"cover", objectPosition:"center" }}/>
@@ -78,12 +79,12 @@ const AboutPage = () => {
         />
       </div>
       <div 
-        className="flex space-y-20 w-full"
+        className="flex space-y-20 w-full featuredRightPadding"
         style={{
           width: "100%",
           right: 0,
           position: "relative",
-          paddingRight: "15%",
+          // paddingRight: "15%",
           zIndex:1
         }}
       >

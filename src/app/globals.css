@@ -45,33 +45,51 @@ body {
   font-weight: bold;
 }
 
-.adaptivePadding {
-  padding: 25rem; 
+.sidebarLeftPadding {
+  padding-left: 8rem;
   transition: padding 0.3s ease;
 
-  @media (max-width: 1792px) {
-    padding: 20rem; 
+  @media (max-width: 1080px) {
+    padding-left: 5rem; 
   }
-  @media (max-width: 1536px) {
-    padding: 18rem; 
+  @media (max-width: 956px) {
+    padding-left: 3rem; 
   }
-  @media (max-width: 1472px) {
-    padding: 15.5rem; 
+  @media (max-width: 584px) {
+    padding-left: 2rem; 
   }
-  @media (max-width: 1408px) {
-    padding: 13rem; 
+}
+
+.sidebarTopPadding {
+  padding-top: 5rem;
+  transition: padding 0.3s ease;
+
+  @media (max-width: 864px) {
+    padding-top: 2rem; 
   }
-  @media (max-width: 1344px) {
-    padding: 10.5rem; 
+}
+
+.sidebarBottomPadding {
+  padding-bottom: 5rem;
+  transition: padding 0.3s ease;
+
+  @media (max-width: 864px) {
+    padding-bottom: 2rem; 
   }
-  @media (max-width: 1280px) {
-    padding: 8rem; 
+}
+
+.featuredRightPadding {
+  padding-right: 8rem;
+  transition: padding 0.3s ease;
+
+  @media (max-width: 1204px) {
+    padding-right: 3rem; 
   }
-  @media (max-width: 1152px) {
-    padding: 5.5rem;
+  @media (max-width: 1080px) {
+    padding-right: 1rem; 
   }
-  @media (max-width: 1024px) {
-    padding: 0rem; 
+  @media (max-width: 864px) {
+    padding-right: 0; 
   }
 }
 
@@ -93,26 +111,6 @@ body {
   justify-content: space-between;
 }
 
-@keyframes wave {
-  0%, 100% {
-    transform: rotate(30deg);
-  }
-  25% {
-    transform: rotate(60deg);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  75% {
-    transform: rotate(0deg);
-  }
-}
-
-.handwave {
-  display: inline-block;
-  font-size: 2em;
-  animation: wave 2s infinite;
-}
 
 @keyframes slideRL {
   from {
@@ -195,53 +193,67 @@ body {
 
 .projectCard:hover:before {
   background-position: 100% 100%;
-  transform: translateY(0.125rem);
 }
 
 .projectCard:before {
   background: linear-gradient(130deg,
   #f6f2ee 0% 33%,
   #faeeee 70%,
-  lightpink 87%,
+  lightblue 87%,
   #faeeee 100%);
   background-position: 0% 0%;
   background-size: 300% 300%;
   content: "";
   height: 100%;
   position: absolute;
-  transition: background-position .5s ease, transform .5s ease;
+  transition: background-position .5s ease;
   width: 100%;
   border-radius: 0.5rem;
 }
-
-.timelineHover:hover:before {
-  background-position: 100% 100% !important;
-}
-
-.timelineHover:before {
-  background: linear-gradient(130deg,
-  #f6f2ee 0 33%,
-  #faeeee 55%,
-  /* #ffb6c1 87%, */
-  lightblue 92%,
-  #faeeee) !important;
-  background-position: 0 0 !important;
-  background-size: 300% 300% !important;
-  content: "";
-  height: 100%;
-  position: absolute;
-  transition: background-position .5s ease, transform .5s ease;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-
 
 .featured {
   background: linear-gradient(180deg,
-  #0d2b52 0 33%,
-  #0f0f0f 70%
+  #0d2b52 0 40%,
+  #0f0f0f 80%
   );
+}
+
+.imageVisiblityByWindow {
+  width: 55%;
+  transition: width 0.3s ease;
+
+  @media (max-width: 864px) {
+    width: 0%; 
+  }
+}
+
+.reverseImageVisiblityByWindow {
+  width:42.5%;
+  transition: width 0.3s ease;
+
+  @media (max-width: 864px) {
+    width: 0%; 
+  }
+}
+
+.textVisiblityByWindow {
+  width:42.5%;
+  margin-right:2.5%; 
+  transition: width 0.3s ease;
+
+  @media (max-width: 864px) {
+    width: 100%; 
+    margin-right: 0;
+  }
+}
+
+.reverseTextVisiblityByWindow {
+  width:55%;
+  margin-left:2.5%; 
+  transition: width 0.3s ease;
+  
+  @media (max-width: 864px) {
+    width: 100%; 
+    margin-left:0; 
+  }
 }

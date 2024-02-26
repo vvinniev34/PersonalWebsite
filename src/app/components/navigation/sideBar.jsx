@@ -63,14 +63,14 @@ const SideBar = () => {
     }, []);
 
     return (
-        <div className="sticky top-0 flex flex-col justify-center items-center w-2/5 h-full min-h-screen z-10" >
+        <div className="sticky top-0 flex flex-col justify-between items-center w-2/5 h-full min-h-screen z-10 sidebarLeftPadding">
             <div 
-                className="w-full h-auto pt-5 " 
-                style={{ paddingLeft:"8rem", paddingRight:"2rem", position:"absolute", top:"5rem", left:0 }}
+                className="w-full h-auto pt-5 sidebarTopPadding" 
+                style={{ paddingRight:"2rem"}}
             >
                 <Header centered={false} title={menuItemsReverseDict[activeSection][0]} description={menuItemsReverseDict[activeSection][1]} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></Header>
             </div>
-            <div style={{ width:"100%", padding:"8rem" }}>
+            <div className="sidebarLeftPadding" style={{ width:"100%", position: "absolute", top:"50%", left:"0", transform:"translate(0%, -50%);" }}>
                 {menuItems.map((menuItem, i) => {
                     return (
                         <div key={i}>
@@ -91,8 +91,8 @@ const SideBar = () => {
                 })}
             </div>
             <div 
-                className="w-full h-auto" 
-                style={{ paddingLeft:"8rem", paddingRight:"2rem", position:"absolute", bottom:"5rem", left:0 }}
+                className="w-full h-auto sidebarBottomPadding" 
+                style={{ paddingRight:"2rem" }}
             >
                 <Header 
                     centered={false} 
