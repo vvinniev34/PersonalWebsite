@@ -61,16 +61,11 @@ const ExperiencePage = () => {
                         className="w-[100%] flex items-center justify-center " 
                         style={{paddingTop:"2.5%", paddingBottom:"2.5%"}}
                     >
-                        <div className="w-[90%] flex flex-row justify-between" style={{padding:'1.25rem'}}>
-                            <div 
-                                className="w-5/12 flex flex-col"
-                            >
+                        <div className="w-[90%] flex flex-wrap">
+                            <div style={{ flex: "1 0 41.66%", boxSizing:"border-box", marginRight:"3.3%" }}>
                                 <SubHeader title={"Education"} description={TimelineElement(education)} color={"#f6f7f2"}></SubHeader>
-                                {/* <BearToast/> */}
                             </div>
-                            <div 
-                                style={{width:"55%"}}
-                            >
+                            <div style={{ flex: "1 0 55%", boxSizing:"border-box" }}>
                                 <SubHeader title={"Work"} description={TimelineElement(workExperience)} color={"#f6f7f2"}></SubHeader>
                             </div>
                         </div>

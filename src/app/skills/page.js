@@ -60,7 +60,6 @@ const SkillsPage = () => {
               width: "100%",
               right: 0,
               position: "relative",
-              // paddingRight: "15%",
           }}
       >
           <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">

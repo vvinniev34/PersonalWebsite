@@ -58,6 +58,9 @@ body {
   @media (max-width: 584px) {
     padding-left: 2rem; 
   }
+  @media (max-width: 496px) {
+    padding-left: 1rem;
+  }
 }
 
 .sidebarTopPadding {
