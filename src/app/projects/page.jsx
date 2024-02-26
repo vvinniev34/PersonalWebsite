@@ -86,7 +86,7 @@ const ProjectPage = () => {
                         className="w-[100%] flex items-center justify-center p-8" 
                         style={{paddingBottom:0}}
                     >
-                        <div className="w-[90%] overflow-hidden">
+                        <div className="overflow-hidden">
                             <SubHeader title={"Completed"} color={"#f6f7f2"}></SubHeader>
 
                             <div className="w-full rounded-lg shadow-lg">
