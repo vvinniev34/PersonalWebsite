@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import TertiaryHeader from "../components/headers/tertiaryheader";
+import { useInView } from 'react-intersection-observer';
+import styles from './page.module.css'
 
 const SkillsPage = () => {
   const languages = (
@@ -47,6 +50,10 @@ const SkillsPage = () => {
       <li>CosmosDB</li>
     </ul>
   )
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
   
   return (
     <section 
@@ -67,17 +74,33 @@ const SkillsPage = () => {
                   className="w-[100%] flex items-center justify-center " 
                   style={{paddingTop:"2.5%", paddingBottom:"2.5%"}}
               >
-                  <div className="w-[90%] flex flex-row flex-wrap justify-between" style={{padding:'1.25rem'}}>
-                      <div style={{ paddingTop:"1rem", paddingBottom:"1rem" }}>
+                  <div 
+                    ref={ref} 
+                    className={`w-[90%] flex flex-row flex-wrap justify-between overflow-hidden`} 
+                    style={{padding:'1.25rem'}}
+                  >
+                      <div 
+                        className={`${inView ? styles.dropIn1 : ""}`}
+                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                      >
                           <TertiaryHeader title={"Languages"} description={languages} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
                       </div>
-                      <div style={{ paddingTop:"1rem", paddingBottom:"1rem" }}>
+                      <div 
+                        className={`${inView ? styles.dropIn2 : ""}`}
+                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                      >
                           <TertiaryHeader title={"Frameworks"} description={frameworks} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
                       </div>
-                      <div style={{ paddingTop:"1rem", paddingBottom:"1rem" }}>
+                      <div
+                        className={`${inView ? styles.dropIn3 : ""}`} 
+                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                      >
                           <TertiaryHeader title={"Tools"} description={tools} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
                       </div>
-                      <div style={{ paddingTop:"1rem", paddingBottom:"1rem" }}>
+                      <div 
+                        className={`${inView ? styles.dropIn4 : ""}`}
+                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                      >
                           <TertiaryHeader title={"Databases"} description={databases} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
                       </div>
                   </div>

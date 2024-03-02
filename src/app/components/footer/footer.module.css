@@ -1,5 +1,6 @@
 
 .paddingFooter {
+    z-index: 9998;
     padding: 25rem;
     transition: padding 0.3s ease;
   

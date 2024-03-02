@@ -1,23 +1,92 @@
-.cursorGlow {
-    position: fixed;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
-    pointer-events: none;
-    mix-blend-mode: screen;
-    opacity: 0.5;
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.35) 0%,
-      rgba(255, 255, 255, 0) 65%
-    );
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-
-    opacity: 0;
-    transition: opacity 0.75s ease;
+.reveal {
+  opacity: 0;
+  transition: min-height 1s ease;
 }
 
-.cursorGlow.visible {
+.dropIn1 {
+  animation: slideTB1 2.5s forwards;
+}
+
+@keyframes slideTB1 {
+  0% {
+    transform: translateY(-100%);
+    padding-bottom: 6rem;
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-100%);
+    padding-bottom: 6rem;
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(0);
+    padding-bottom: 0;
     opacity: 1;
+  }
+}
+
+.dropIn2 {
+  animation: slideTB2 2.5s forwards;
+}
+
+@keyframes slideTB2 {
+  0% {
+    transform: translateY(-100%);
+    padding-bottom: 6rem;
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(-100%);
+    padding-bottom: 0;
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(0);
+    padding-bottom: 0;
+    opacity: 1;
+  }
+}
+
+.dropIn3 {
+  animation: slideTB3 2.5s forwards;
+}
+
+@keyframes slideTB3 {
+  0% {
+    transform: translateY(-100%);
+    padding-bottom: 6rem;
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-100%);
+    padding-bottom: 0;
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    padding-bottom: 0;
+    opacity: 1;
+  }
+}
+
+.dropIn4 {
+  animation: slideTB4 2.5s forwards;
+}
+
+@keyframes slideTB4 {
+  0% {
+    transform: translateY(-100%);
+    padding-bottom: 6rem;
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-100%);
+    padding-bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    padding-bottom: 0;
+    opacity: 1;
+  }
 }
