@@ -8,3 +8,15 @@
 .contactSVG:hover path {
     fill:lightblue
 }
+
+.mobileWidth {
+    opacity: 0;
+    width: 0;
+    position: absolute;
+
+    @media (min-width: 640px){
+        opacity: 1;
+        width: 40%;
+        position: sticky;
+    }
+}

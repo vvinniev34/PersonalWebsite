@@ -52,15 +52,7 @@ const AboutPage = () => {
       }}
       id="about"
     >
-      <div 
-        style={{
-          position: "absolute", 
-          marginTop: "-4.5rem", 
-          marginLeft:"-40%",
-          width:"100%",
-          minHeight:"100vh"
-        }}
-      >
+      <div className="mobileImageBackground">
         <div 
           style={{ 
             background:'linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52)',
@@ -78,16 +70,7 @@ const AboutPage = () => {
 					objectPosition="center"
         />
       </div>
-      <div 
-        className="flex space-y-20 w-full featuredRightPadding"
-        style={{
-          width: "100%",
-          right: 0,
-          position: "relative",
-          // paddingRight: "15%",
-          zIndex:1
-        }}
-      >
+      <div className="flex space-y-20 w-full featuredRightPadding">
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           {/*1 2 1*/}
           <div className="w-[100%] flex flex-col items-center justify-center">

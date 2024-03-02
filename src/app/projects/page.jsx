@@ -46,15 +46,7 @@ const ProjectPage = () => {
             }}
             id="projects"
         >
-            <div 
-                style={{
-                    position: "absolute", 
-                    marginTop: "-4.5rem", 
-                    marginLeft:"-40%",
-                    width:"100%",
-                    minHeight:"100vh"
-                }}
-            >
+            <div className="mobileImageBackground">
                 <div 
                     style={{ 
                         width:"100%",
@@ -71,16 +63,7 @@ const ProjectPage = () => {
                     objectPosition="center"
                 />
             </div>
-            <div 
-                className="flex space-y-20 w-full featuredRightPadding" 
-                style={{
-                    width: "100%",
-                    right: 0,
-                    position: "relative",
-                    // paddingRight: "15%",
-                    zIndex: 1
-                }}
-            >
+            <div className="flex space-y-20 w-full featuredRightPadding">
                 <div className="mx-auto w-auto max-w-[100rem] overflow-hidden flex flex-col items-center justify-center">
                     <div 
                         className="w-[100%] flex items-center justify-center p-8" 

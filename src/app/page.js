@@ -18,7 +18,7 @@ export default function Home() {
         <Splash/>
         <div className="flex featured">
           <SideBar/>
-          <div className="w-3/5 overflow-auto">
+          <div className="overflow-auto mobileFeatureWidth">
             <AboutPage/>
             {/* <Featured/> */}
 

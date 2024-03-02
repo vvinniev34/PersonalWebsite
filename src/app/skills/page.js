@@ -61,14 +61,7 @@ const SkillsPage = () => {
       style={{paddingBottom:'4.5rem', paddingTop:'4.5rem', position:"relative", overflow:"hidden"}}
       id="skills"
     >
-      <div 
-          className="flex space-y-20 w-full featuredRightPadding"
-          style={{
-              width: "100%",
-              right: 0,
-              position: "relative",
-          }}
-      >
+      <div className="flex space-y-20 w-full featuredRightPadding">
           <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
               <div 
                   className="w-[100%] flex items-center justify-center " 
@@ -77,31 +70,39 @@ const SkillsPage = () => {
                   <div 
                     ref={ref} 
                     className={`w-[90%] flex flex-row flex-wrap justify-between overflow-hidden`} 
-                    style={{padding:'1.25rem'}}
+                    style={{paddingTop:'1.25rem', paddingBottom:'1.25rem', paddingLeft:'0.75rem', paddingRight:'0.75rem'}}
                   >
                       <div 
-                        className={`${inView ? styles.dropIn1 : ""}`}
-                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                        className={`overflow-hidden`}
+                        style={{padding:"0.5rem", paddingBottom:'2rem'}}
                       >
+                        <div className={`${inView ? styles.dropIn1 : ""}`}>
                           <TertiaryHeader title={"Languages"} description={languages} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
+                        </div>
                       </div>
                       <div 
-                        className={`${inView ? styles.dropIn2 : ""}`}
-                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                        className={`overflow-hidden`}
+                        style={{padding:"0.5rem", paddingBottom:'2rem'}}
                       >
+                        <div className={`${inView ? styles.dropIn2 : ""}`}>
                           <TertiaryHeader title={"Frameworks"} description={frameworks} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
+                        </div>
                       </div>
                       <div
-                        className={`${inView ? styles.dropIn3 : ""}`} 
-                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                        className={`overflow-hidden`} 
+                        style={{padding:"0.5rem", paddingBottom:'2rem'}}
                       >
+                        <div className={`${inView ? styles.dropIn3 : ""}`}>
                           <TertiaryHeader title={"Tools"} description={tools} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
+                        </div>
                       </div>
                       <div 
-                        className={`${inView ? styles.dropIn4 : ""}`}
-                        style={{ paddingTop:"1rem", paddingBottom:"1rem" }}
+                        className={`overflow-hidden`} 
+                        style={{padding:"0.5rem", paddingBottom:'2rem'}}
                       >
+                        <div className={`${inView ? styles.dropIn4 : ""}`}>
                           <TertiaryHeader title={"Databases"} description={databases} color={"#f6f7f2"} descriptionColor={"#f6f7f2"}></TertiaryHeader>
+                        </div>
                       </div>
                   </div>
               </div>

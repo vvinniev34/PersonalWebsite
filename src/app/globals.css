@@ -35,6 +35,34 @@ body {
   user-select: none; /* Standard syntax */
 }
 
+.mobileSticky {
+  position: fixed;
+
+  @media (min-width: 640px) {
+    position: absolute;
+  }
+}
+
+.mobileFeatureWidth {
+  width: 100%;
+
+  @media (min-width: 640px) {
+    width: 60%;
+  }
+}
+
+.mobileImageBackground {
+  position: absolute;
+  margin-top: -4.5rem;
+  margin-left: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  @media (min-width: 640px) {
+    margin-left: -40%;
+  }
+}
+
 .vertical-timeline {
   padding: 0 !important;
   padding-top: 0.1em !important;
@@ -84,6 +112,10 @@ body {
 .featuredRightPadding {
   padding-right: 8rem;
   transition: padding 0.3s ease;
+  width: 100%;
+  right: 0;
+  position: relative;
+  z-index:1;
 
   @media (max-width: 1204px) {
     padding-right: 3rem; 
