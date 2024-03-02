@@ -1,7 +1,8 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect }  from "react";
 import SubHeader from "../components/headers/subheader.jsx"
 import Timeline from "../components/timeline/timeline.jsx"
-// import BearToast from "../components/3dmodels/beartoast.jsx"
+import { Fish } from './fish_svgs.jsx'
 import "../globals.css"
 
 const ExperiencePage = () => {
@@ -39,6 +40,23 @@ const ExperiencePage = () => {
         );
     }
 
+    const [fishPosition, setFishPosition] = useState(0);
+
+    const checkScroll = () => {
+        const projectSection = document.getElementById('experience');
+        const { top, height } = projectSection.getBoundingClientRect();
+        const viewportMiddleY = window.innerHeight / 2;
+
+        const newFishPosition =  ((viewportMiddleY - top) / height) * 100;
+        setFishPosition(newFishPosition)
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+        return () => window.removeEventListener('scroll', checkScroll);
+    }, []);
+
     return (
         <section 
             className="section flex flex-col items-center justify-between"
@@ -48,6 +66,18 @@ const ExperiencePage = () => {
             }}
             id="experience"
         >
+            <div 
+                className="mobileImageBackground"
+                style={{ overflow:"hidden" }}    
+            >
+                <div style={{ position:'absolute', height:'100%', right:`${fishPosition}%` }}>
+                    <Fish position={1}/>
+                    <Fish position={2}/>
+                    <Fish position={3}/>
+                    <Fish position={4}/>
+                    <Fish position={5}/>
+                </div>
+            </div>
             <div className="flex space-y-20 w-full featuredRightPadding">
                 <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
                     <div 

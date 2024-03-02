@@ -46,15 +46,10 @@ const ProjectPage = () => {
             }}
             id="projects"
         >
-            <div className="mobileImageBackground">
-                <div 
-                    style={{ 
-                        width:"100%",
-                        height:"100%",
-                        position:"absolute",
-                        zIndex:1
-                    }}
-                />
+            <div 
+                className="mobileImageBackground"
+                style={{ transform: "scaleX(-1) translateX(20%)" }}
+            >
                 <Image 
                     src="/submarine.png"
                     alt="ocean underwater surface"
