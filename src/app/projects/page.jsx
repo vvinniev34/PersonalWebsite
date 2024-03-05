@@ -50,6 +50,15 @@ const ProjectPage = () => {
                 className="mobileImageBackground"
                 style={{ transform: "scaleX(-1) translateX(20%)" }}
             >
+                <div 
+                    style={{ 
+                        background:'linear-gradient(to left, rgba(255,255,255,0) 10%, #0f0f0f)',
+                        width:"100%",
+                        height:"100%",
+                        position:"absolute",
+                        zIndex:1
+                    }}
+                />
                 <Image 
                     src="/submarine.png"
                     alt="ocean underwater surface"
