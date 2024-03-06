@@ -1,4 +1,4 @@
-.cursorGlow {
+/* .cursorGlow {
     position: fixed;
     width: 50rem;
     height: 50rem;
@@ -15,8 +15,13 @@
 
     opacity: 0;
     transition: opacity 0.5s ease;
+} */
+
+.cursorGlow {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .cursorGlow.visible {
-    opacity: 0.65;
+    opacity: 1;
 }
