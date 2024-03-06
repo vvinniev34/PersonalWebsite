@@ -1,8 +1,3 @@
-.reveal {
-  opacity: 0;
-  transition: min-height 1s ease;
-}
-
 .dropIn1 {
   animation: slideTB1 2.5s forwards;
 }
