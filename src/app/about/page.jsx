@@ -74,7 +74,7 @@ const AboutPage = () => {
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           {/*1 2 1*/}
           <div className="w-[100%] flex flex-col items-center justify-center">
-              {SlideIn("Hey, I'm Vincent!", intro, "/about/computer.png", false, true, false)}
+              {SlideIn("Hey, I'm Vincent!", intro, "/about/minimalist_coding_background.png", false, true, false)}
               {SlideIn("Some Background", background, "/about/flappy_bird2.jpg", true)}
               {SlideIn("My Interests", interests, "/about/food.jpg", false, false, true)}
           </div>
