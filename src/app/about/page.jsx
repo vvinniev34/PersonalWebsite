@@ -13,15 +13,12 @@ const AboutPage = () => {
     return (
       <div 
         className={`w-[100%] rounded-lg flex items-center justify-center`} 
-        style={top ? {borderTopLeftRadius:0, borderTopRightRadius:0, marginTop:"1%"} : 
-              (bottom ? {borderBottomLeftRadius:0, borderBottomRightRadius:0, marginBottom:"1%"} : {})}
+        style={top ? {borderTopLeftRadius:0, borderTopRightRadius:0, paddingBottom: "1rem"} : 
+              (bottom ? {borderBottomLeftRadius:0, borderBottomRightRadius:0, paddingTop: "1rem"} : {})}
       >
         <div className="w-[90%]">
           <NoCardSlidingDiv reverse={reverse}>
-            <div 
-              className={reverse ? "reverseTextVisiblityByWindow" : "textVisiblityByWindow"}
-              // style={reverse ? {marginLeft:"2.5%", width:"55%"} : {marginRight:"2.5%", width:"42.5%"}}
-            >
+            <div className={reverse ? "reverseTextVisiblityByWindow" : "textVisiblityByWindow"}>
               <SubHeader 
                 title={title} 
                 description={description} 
@@ -31,7 +28,15 @@ const AboutPage = () => {
             </div>
             <div 
               className={`m-0 bg-offwhite overflow-hidden rounded-lg ${reverse ? "reverseImageVisiblityByWindow" : "imageVisiblityByWindow"}`}
-              // style={reverse ? {width:"42.5%"} : {width:"55%"}}
+              style={reverse ? {
+                height: 'calc(100% - 1.25rem)',
+                position: 'absolute',
+                left: '1.25rem'
+              } : {
+                height: 'calc(100% - 1.25rem)',
+                position: 'absolute',
+                right: '1.25rem'
+              }}
             >
               <div className="h-[100%] object-cover zoom-on-hover">
                 <Image src={imgSrc} alt="about image" style={{ height:"100%", objectFit:"cover", objectPosition:"center" }}/>

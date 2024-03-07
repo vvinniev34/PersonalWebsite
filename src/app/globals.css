@@ -273,22 +273,22 @@ body {
 
 .textVisiblityByWindow {
   width:42.5%;
-  margin-right:2.5%; 
+  padding-right:2.5%; 
   transition: width 0.3s ease;
 
   @media (max-width: 1296px) {
     width: 100%; 
-    margin-right: 0;
+    padding-right: 0;
   }
 }
 
 .reverseTextVisiblityByWindow {
   width:55%;
-  margin-left:2.5%; 
+  padding-left:2.5%; 
   transition: width 0.3s ease;
   
   @media (max-width: 1296px) {
     width: 100%; 
-    margin-left:0; 
+    padding-left:0; 
   }
 }
