@@ -21,7 +21,7 @@ const AboutPage = () => {
             <div className={reverse ? "reverseTextVisiblityByWindow" : "textVisiblityByWindow"}>
               <SubHeader 
                 title={title} 
-                description={description} 
+                description={description}
                 color={'#f6f7f2'}
                 descriptionColor={'#f6f7f2'}
               />

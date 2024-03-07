@@ -265,6 +265,9 @@ body {
 .reverseImageVisiblityByWindow {
   width:42.5%;
   transition: width 0.3s ease;
+  /* height: calc(100% - 1.25rem);
+  position: absolute;
+  left: 1.25rem; */
 
   @media (max-width: 1296px) {
     width: 0%; 
@@ -275,6 +278,9 @@ body {
   width:42.5%;
   padding-right:2.5%; 
   transition: width 0.3s ease;
+  /* height: calc(100% - 1.25rem);
+  position: absolute;
+  right: 1.25rem; */
 
   @media (max-width: 1296px) {
     width: 100%; 
