@@ -1,32 +1,41 @@
-
+/* 
 .paddingFooter {
-    z-index: 9998;
-    padding: 25rem;
-    transition: padding 0.3s ease;
-  
-    @media (max-width: 1792px) {
-        padding: 20rem; 
-      }
-    @media (max-width: 1536px) {
-      padding: 18rem; 
+  z-index: 9998;
+  padding: 25rem;
+  transition: padding 0.3s ease;
+
+  @media (max-width: 1792px) {
+      padding: 20rem; 
     }
-    @media (max-width: 1472px) {
-      padding: 15.5rem; 
-    }
-    @media (max-width: 1408px) {
-      padding: 13rem; 
-    }
-    @media (max-width: 1344px) {
-      padding: 10.5rem; 
-    }
-    @media (max-width: 1280px) {
-      padding: 8rem; 
-    }
-    @media (max-width: 1152px) {
-      padding: 5.5rem;
-    }
-    @media (max-width: 1024px) {
-      /* padding: 15%;  */
-      padding: 4rem;
-    }
+  @media (max-width: 1536px) {
+    padding: 18rem; 
   }
+  @media (max-width: 1472px) {
+    padding: 15.5rem; 
+  }
+  @media (max-width: 1408px) {
+    padding: 13rem; 
+  }
+  @media (max-width: 1344px) {
+    padding: 10.5rem; 
+  }
+  @media (max-width: 1280px) {
+    padding: 8rem; 
+  }
+  @media (max-width: 1152px) {
+    padding: 5.5rem;
+  }
+  @media (max-width: 1024px) {
+    padding: 4rem;
+  }
+} */
+
+.textHover {
+  color: darkgray;
+  font-weight: bold;
+}
+
+.textHover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
