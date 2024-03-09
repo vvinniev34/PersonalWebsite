@@ -5,8 +5,6 @@ import SkillsPage from "./skills/page";
 import ProjectPage from "./projects/page"
 import Footer from "./components/footer/footer";
 
-// import Featured from "./about/possible";
-
 import GlowingCursorContainer from "./components/divcontainers/glowingCursor"
 import SideBar from "./components/navigation/sideBar"
 
@@ -18,7 +16,6 @@ export default function Home() {
           <SideBar/>
           <div className="overflow-auto mobileFeatureWidth">
             <AboutPage/>
-            {/* <Featured/> */}
 
             <ExperiencePage/>
             <GlowingCursorContainer>

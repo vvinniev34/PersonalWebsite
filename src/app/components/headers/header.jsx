@@ -3,7 +3,6 @@ export default function Header(props) {
     const { title, description = "", centered = false, color = "black", descriptionColor } = props
 
     return (
-      // <div className={`${centered ? 'text-center' : 'w-5/6 lg:w-3/5'} pb-5`}>
       <div className={`${centered ? 'text-center' : 'w-full'} pb-5`}>
         {title && (
           <div className={`text-3xl font-extrabold tracking-tight md:text-5xl`} style={{color:/*color*/"white"}}>

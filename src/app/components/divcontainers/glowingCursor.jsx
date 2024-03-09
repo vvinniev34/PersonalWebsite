@@ -33,10 +33,6 @@ const GlowingCursorContainer = ( props ) => {
     return (
         <div>
             {children}
-            {/* <div
-                className={`${styles.cursorGlow} ${isBetweenSections ? styles.visible : ""}`}
-                style={{ left: cursorPosition.x, top: cursorPosition.y }}
-            ></div> */}
             <div 
                 className={`pointer-events-none inset-0 z-30 transition duration-300 ${styles.cursorGlow} ${isBetweenSections ? styles.visible : ""}`} 
                 style={{ 
