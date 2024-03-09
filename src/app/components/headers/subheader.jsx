@@ -11,7 +11,7 @@ export default function SubHeader(props) {
           </div>
         )}
         {description && (
-          <div className={`mt-4 font-serif text-l text-gray-600 md:text-xl`} style={descriptionColor ? {color:descriptionColor} : {}}>
+          <div className={`mt-4 font-serif text-lg text-gray-600 md:text-xl`} style={descriptionColor ? {color:descriptionColor} : {}}>
             {description}
           </div>
         )}
