@@ -12,7 +12,7 @@ export default function Footer(){
                 <Contact></Contact>
             </div>
             <div 
-                className='font-serif text-center text-md md:text-lg p-5' 
+                className='font-serif text-white text-center text-md md:text-lg p-5' 
                 style={{ paddingBottom:'1.25rem', background: 'rgba(0, 0, 0, 0.2)' }}
             >
                 <p>Thanks for checking out my portfolio!</p>
