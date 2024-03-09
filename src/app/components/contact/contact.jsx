@@ -5,9 +5,6 @@ import SecondaryPageDivider from "../pagedivider/secondarypagedivider.jsx"
 import { GithubSVG, LinkedInSVG, MailSVG, InstagramSVG, UpRightSVG } from "../contact/svgs.jsx"
 import styles from "./svgs.module.css"
 
-const colors = ["darkorange", "cadetblue", "lightsalmon", "indianred", "darkcyan", "chocolate"]
-const brightcolors = ["blueviolet", "deeppink"]
-
 const github = "https://github.com/vvinniev34"
 export function handleGithubClick() {
     window.open(github, '_blank');
