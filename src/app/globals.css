@@ -38,7 +38,8 @@ body {
 .mobileSticky {
   position: fixed;
 
-  @media (min-width: 640px) {
+  /* formerly 640px */
+  @media (min-width: 768px) {
     position: absolute;
   }
 }
@@ -46,7 +47,7 @@ body {
 .mobileFeatureWidth {
   width: 100%;
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     width: 60%;
   }
 }
@@ -59,7 +60,7 @@ body {
   width: 100%;
   min-height: 100vh;
 
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     margin-left: -40%;
     opacity: 1;
   }
@@ -259,8 +260,8 @@ body {
 .imageVisiblityByWindow {
   width: 55%;
   transition: width 0.3s ease;
-  /* was 864px */
-  @media (max-width: 1296px) {
+  /* @media (max-width: 1296px) { */
+  @media (max-width: 2000px) {
     width: 0%; 
   }
 }
@@ -268,11 +269,9 @@ body {
 .reverseImageVisiblityByWindow {
   width:42.5%;
   transition: width 0.3s ease;
-  /* height: calc(100% - 1.25rem);
-  position: absolute;
-  left: 1.25rem; */
 
-  @media (max-width: 1296px) {
+  /* @media (max-width: 1296px) { */
+  @media (max-width: 2000px) {
     width: 0%; 
   }
 }
@@ -281,11 +280,9 @@ body {
   width:42.5%;
   padding-right:2.5%; 
   transition: width 0.3s ease;
-  /* height: calc(100% - 1.25rem);
-  position: absolute;
-  right: 1.25rem; */
 
-  @media (max-width: 1296px) {
+  /* @media (max-width: 1296px) { */
+  @media (max-width: 2000px) {
     width: 100%; 
     padding-right: 0;
   }
@@ -296,7 +293,8 @@ body {
   padding-left:2.5%; 
   transition: width 0.3s ease;
   
-  @media (max-width: 1296px) {
+  /* @media (max-width: 1296px) { */
+  @media (max-width: 2000px) {
     width: 100%; 
     padding-left:0; 
   }

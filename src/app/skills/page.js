@@ -46,6 +46,7 @@ const SkillsPage = () => {
     <ul>
       <li>PostgreSQL</li>
       <li>MySQL</li>
+      <li>MongoDB</li>
       <li>Firebase</li>
       <li>CosmosDB</li>
     </ul>
@@ -61,7 +62,7 @@ const SkillsPage = () => {
       style={{paddingBottom:'4.5rem', paddingTop:'4.5rem', position:"relative", overflow:"hidden"}}
       id="skills"
     >
-      <div className="flex space-y-20 w-full featuredRightPadding">
+      <div className="flex space-y-20 w-full featuredRightPadding" style={{ zIndex:30 }}>
           <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
               <div 
                   className="w-[100%] flex items-center justify-center " 

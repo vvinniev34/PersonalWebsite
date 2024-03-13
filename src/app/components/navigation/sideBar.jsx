@@ -63,7 +63,7 @@ const SideBar = () => {
     }, []);
 
     return (
-        <div className={`${styles.mobileWidth} sticky top-0 flex flex-col justify-between items-center h-full min-h-screen z-10 sidebarLeftPadding`}>
+        <div className={`${styles.mobileWidth} sticky top-0 flex flex-col justify-between items-center h-full min-h-screen z-30 sidebarLeftPadding`}>
             <div 
                 className="w-full h-auto pt-5 sidebarTopPadding" 
                 style={{ paddingRight:"2rem"}}

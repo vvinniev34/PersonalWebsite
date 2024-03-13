@@ -14,7 +14,8 @@
     width: 0;
     position: absolute;
 
-    @media (min-width: 640px){
+    /* @media (min-width: 640px){ */
+    @media (min-width: 768px) {
         opacity: 1;
         width: 40%;
         position: sticky;

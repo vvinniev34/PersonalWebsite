@@ -47,7 +47,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="mobileSticky top-0 flex flex-wrap items-center gap-x-5 bg-white/80 px-4 py-4 backdrop-blur md:px-16 md:py-5 lg:px-32 w-full" style={{/*position:"absolute",*/ zIndex:"12"}}>
+    <div className="mobileSticky top-0 flex flex-wrap items-center gap-x-5 bg-white/80 px-4 py-4 backdrop-blur md:px-16 md:py-5 lg:px-32 w-full" style={{zIndex:50}}>
       {menuItems.map((menuItem, i) => {
           return (
             <div key={i}>
