@@ -8,7 +8,7 @@ export default function FeaturedProject () {
         <div className={`rounded-md overflow-hidden ${styles.projectWrapper}`}>
             <div className={`w-full h-full ${styles.projectImage}`}>
                 <Image 
-                    src="/about/food.jpg"
+                    src="/projects/layoffcrunch_frontpage.png"
                     alt="layoffcrunch UI"
                     layout="fill" 
                     objectFit="cover" 
