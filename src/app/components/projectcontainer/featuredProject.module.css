@@ -2,6 +2,11 @@
     width: 100%;
     position: relative;
     background-color: #f6f2ee;
+
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projectWrapper .projectDescriptionDiv {
@@ -9,8 +14,16 @@
     transition: opacity 0.5s;
 }
 
+.projectWrapper .projectDescriptionDiv .arrow {
+    transition: transform 0.5s;
+}
+
 .projectWrapper:hover .projectDescriptionDiv {
     opacity: 0.9;
+}
+
+.projectWrapper:hover .projectDescriptionDiv .arrow {
+    transform: translate(1rem);
 }
 
 .projectWrapper .projectImage {
@@ -35,5 +48,4 @@
     left: 0%;
     right: 0%;
     pointer-events: none;
-    /* margin: 50px; */
 }

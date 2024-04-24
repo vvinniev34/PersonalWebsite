@@ -9,7 +9,7 @@ export default function Footer(){
             style={{ position:"relative", zIndex:"50"}}
         >
             <div className='sidebarLeftPadding pb-5' style={{ paddingTop:'3rem' }}>
-                <Contact></Contact>
+                <Contact/>
             </div>
             <div 
                 className='font-serif text-white text-center text-md md:text-lg p-5' 
