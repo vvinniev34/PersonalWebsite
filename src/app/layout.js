@@ -13,6 +13,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Vincent Liu",
   description: "Vincent's Portfolio website, created using Next.js",
+  robots: {
+		index: false,
+		follow: true,
+		googleBot: {
+			index: false,
+			follow: true
+		},
+	},
 };
 
 export default function RootLayout({ children }) {
