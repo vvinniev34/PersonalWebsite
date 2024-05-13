@@ -15,10 +15,10 @@ export const metadata = {
   description: "Vincent's Portfolio website, created using Next.js",
   robots: {
 		index: false,
-		follow: true,
+		follow: false,
 		googleBot: {
 			index: false,
-			follow: true
+			follow: false
 		},
 	},
 };
