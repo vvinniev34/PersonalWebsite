@@ -2,56 +2,10 @@
 import React from "react";
 import TertiaryHeader from "../components/headers/tertiaryheader";
 import { useInView } from "react-intersection-observer";
+import { languages, frameworks, tools, databases } from "./skillsList.js";
 import styles from "./page.module.css";
 
 const SkillsPage = () => {
-  const languages = (
-    <ul>
-      <li>Java</li>
-      <li>JavaScript</li>
-      <li>TypeScript</li>
-      <li>Python</li>
-      <li>C</li>
-      <li>C++</li>
-      <li>C#</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SQL</li>
-    </ul>
-  );
-  const frameworks = (
-    <ul>
-      <li>React.js</li>
-      <li>Spring Boot</li>
-      <li>.NET</li>
-      <li>Django</li>
-      <li>Node.js</li>
-    </ul>
-  );
-
-  const tools = (
-    <ul>
-      <li>Microsoft Azure</li>
-      <li>Tailwind CSS</li>
-      <li>Git & Github</li>
-      <li>PyTorch</li>
-      <li>MPI</li>
-      <li>OpenMP</li>
-      <li>Docker</li>
-      <li>Selenium</li>
-    </ul>
-  );
-
-  const databases = (
-    <ul>
-      <li>PostgreSQL</li>
-      <li>MySQL</li>
-      <li>MongoDB</li>
-      <li>Firebase</li>
-      <li>CosmosDB</li>
-    </ul>
-  );
-
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
