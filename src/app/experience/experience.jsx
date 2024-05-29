@@ -89,7 +89,7 @@ const ExperiencePage = () => {
           <Fish position={5} />
         </div>
       </div>
-      <div className="flex space-y-20 w-full featuredRightPadding" style={{zIndex:50}}>
+      <div className="flex space-y-20 w-full featuredRightPadding" style={{zIndex:25}}>
         <div className="mx-auto w-full max-w-[100rem] rounded-md overflow-hidden">
           <div
             className="w-[100%] flex items-center justify-center "

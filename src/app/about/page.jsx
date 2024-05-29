@@ -139,7 +139,7 @@ const AboutPage = () => {
           objectPosition="center"
         />
       </div>
-      <div className="flex space-y-20 w-full featuredRightPadding" style={{zIndex:50}}>
+      <div className="flex space-y-20 w-full featuredRightPadding" style={{zIndex:25}}>
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           {/*1 2 1*/}
           <div className="w-[100%] flex flex-col items-center justify-center">
