@@ -81,7 +81,7 @@ export default function Navbar() {
 
   return (
     <div className="mobileSticky top-0 flex flex-wrap bg-white/80  pt-4 backdrop-blur md:pt-5 w-full" style={{zIndex:50}}>
-      <div className="sidebarLeftPadding sidebarRightPadding flex flex-wrap w-full pb-4 md-pb-5">
+      <div className="sidebarLeftPadding sidebarRightPadding flex flex-wrap items-center w-full h-8 pb-4 md-pb-5">
         <div>
           <SmoothScrollLink
             className={`text-xl hover:text-black md:text-2xl ${
