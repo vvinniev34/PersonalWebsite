@@ -72,9 +72,6 @@ const Carousel = (props) => {
                     ...(tweenValues.length && { opacity: tweenValues[index] })
                   }}
                 >
-                  <div className={styles.embla__slide__number}>
-                    <span>{index + 1}</span>
-                  </div>
                   {projectList[index]}
                 </div>
               ))}
