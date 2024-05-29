@@ -23,12 +23,23 @@ const GlowingCursorContainer = ( props ) => {
                 setIsBetweenSections(isBelowSkills && isAboveProjects);
             }
         };
-        document.addEventListener('mousemove', updateCursorPosition);
+        const updateScrollPosition = () => {
+            const skillsElement = document.getElementById('skills');        
+            if (skillsElement) {                
+                const skillsPosition = skillsElement.getBoundingClientRect();
+                const isBetween = skillsPosition.top < window.innerHeight;
+                if (!isBetween)    setIsBetweenSections(false);
+            }
+        }
 
+        document.addEventListener('mousemove', updateCursorPosition);
+        document.addEventListener('scroll', updateScrollPosition);
         return () => {
             document.removeEventListener('mousemove', updateCursorPosition);
+            document.removeEventListener('scroll', updateScrollPosition);
         };
     }, []);
+
 
     const dynamicStyles = {
         '--cursor-x': `${cursorPosition.x}px`,
