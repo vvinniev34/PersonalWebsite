@@ -17,6 +17,13 @@ const ExperiencePage = () => {
     ]
     const workExperience = [
         {
+            title:"Software Engineer Intern",
+            location:"McLean, VA",
+            description:"🕒 TBA",
+            time:"June 2024 - August 2024",
+            img:"/experience/capital_one.jpeg"
+        },
+        {
             title:"NLP Undergraduate Researcher",
             location:"Minneapolis, MN",
             description:"🤖📝🔍 Minnesota NLP",
@@ -29,13 +36,6 @@ const ExperiencePage = () => {
             description:"📱💻🏥 Telehealth",
             time:"May 2023 - August 2023",
             img:"/experience/epic_systems.jpg"
-        },
-        {
-            title:"Software Engineer Intern",
-            location:"McLean, VA",
-            description:"🕒 TBA",
-            time:"June 2024 - August 2024",
-            img:"/experience/capital_one.jpeg"
         }
     ]
 

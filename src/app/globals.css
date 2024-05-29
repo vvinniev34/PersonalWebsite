@@ -94,6 +94,24 @@ body {
   }
 }
 
+.sidebarRightPadding {
+  padding-right: 8rem;
+  transition: padding 0.3s ease;
+
+  @media (max-width: 1080px) {
+    padding-right: 5rem; 
+  }
+  @media (max-width: 956px) {
+    padding-right: 3rem; 
+  }
+  @media (max-width: 584px) {
+    padding-right: 2rem; 
+  }
+  @media (max-width: 496px) {
+    padding-right: 1rem;
+  }
+}
+
 .sidebarTopPadding {
   padding-top: 5rem;
   transition: padding 0.3s ease;
@@ -257,3 +275,17 @@ body {
   );
 }
 
+.fade_in {
+  animation: fadeInAnimation 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-5px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
