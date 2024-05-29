@@ -84,11 +84,7 @@ export default function Navbar() {
       <div className="sidebarLeftPadding sidebarRightPadding flex flex-wrap items-center w-full pb-4 md:pb-5">
         <div>
           <SmoothScrollLink
-            className={`text-xl hover:text-black md:text-2xl ${
-              "/" === activeSection
-                ? 'font-extrabold text-black'
-                : 'text-gray-600'
-            } relative group`}
+            className="text-xl hover:text-black md:text-2xl text-gray-600 relative group"
             href={`#/`}
             targetId={"/"}
           >

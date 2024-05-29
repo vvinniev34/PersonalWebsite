@@ -30,15 +30,17 @@ const GlowingCursorContainer = ( props ) => {
         };
     }, []);
 
+    const dynamicStyles = {
+        '--cursor-x': `${cursorPosition.x}px`,
+        '--cursor-y': `${cursorPosition.y}px`,
+    };
+
     return (
         <div>
             {children}
             <div 
-                className={`pointer-events-none inset-0 z-20 transition duration-300 ${styles.cursorGlow} ${isBetweenSections ? styles.visible : ""}`} 
-                style={{ 
-                    position:"fixed", 
-                    background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.25), transparent 80%)`,
-                }}>
+                className={`pointer-events-none inset-0 z-20 ${styles.cursorGlow} ${isBetweenSections ? styles.visible : ""} ${styles.radialGradient}`} 
+                style={dynamicStyles}>
             </div>
         </div>
     )
