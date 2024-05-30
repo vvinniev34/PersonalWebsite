@@ -1,128 +1,131 @@
-.fishPosition1, .fishPosition2, .fishPosition3, .fishPosition4, .fishPosition5 {
-    position: absolute;
+.fishPosition1,
+.fishPosition2,
+.fishPosition3,
+.fishPosition4,
+.fishPosition5 {
+  position: absolute;
 }
 .fishPosition1 {
-    animation: fish 1.8s ease infinite alternate;
-    right: -7rem;
-    bottom: 55%;
+  animation: fish 1.8s ease infinite alternate;
+  right: -7rem;
+  bottom: 55%;
 }
 .fishPosition2 {
-    animation: fish 1.2s ease infinite alternate;
-    right: 7rem;
-    bottom: 45%;
+  animation: fish 1.2s ease infinite alternate;
+  right: 7rem;
+  bottom: 45%;
 }
 .fishPosition3 {
-    animation: fish 1.6s ease infinite alternate;
-    right: -2rem;
-    bottom: 33%;
+  animation: fish 1.6s ease infinite alternate;
+  right: -2rem;
+  bottom: 33%;
 }
 .fishPosition4 {
-    animation: fish 1.5s ease infinite alternate;
-    right: 1rem;
-    bottom: 27%;
+  animation: fish 1.5s ease infinite alternate;
+  right: 1rem;
+  bottom: 27%;
 }
 .fishPosition5 {
-    animation: fish 1.3s ease infinite alternate;
-    right: -4rem;
-    bottom: 10%;
+  animation: fish 1.3s ease infinite alternate;
+  right: -4rem;
+  bottom: 10%;
 }
 
-
 @keyframes fish {
-    from {
-        transform: translate(-4px, -2px);
-    }
-    to {
-        transform: translate(0px, 0px) rotate(1deg);
-    }
+  from {
+    transform: translate(-4px, -2px);
+  }
+  to {
+    transform: translate(0px, 0px) rotate(1deg);
+  }
 }
 
 .bod {
-    color: #C8DFFF;
-    transform-origin: 0 50%;
-    animation: bod 1s ease infinite alternate;
+  color: #c8dfff;
+  transform-origin: 0 50%;
+  animation: bod 1s ease infinite alternate;
 }
 
 @keyframes bod {
-    from {
-        transform: translateX(0px) scalex(1);
-    }
-    to {
-        transform: translateX(0.25px) scalex(0.98);
-    }
+  from {
+    transform: translateX(0px) scalex(1);
+  }
+  to {
+    transform: translateX(0.25px) scalex(0.98);
+  }
 }
 
 .eye {
-    color: #002C9B;
+  color: #002c9b;
 }
 
 .fintail {
-    color: #002C9B;
-    transform-origin: 200px;
-    animation: tail 1s 1s ease infinite alternate;
+  color: #002c9b;
+  transform-origin: 200px;
+  animation: tail 1s 1s ease infinite alternate;
 }
 
 @keyframes tail {
-    from {
-        transform: scaleX(1) rotate(0deg);
-    }
-    to {
-        transform: scaleX(0.75) rotate(3deg);
-    }
+  from {
+    transform: scaleX(1) rotate(0deg);
+  }
+  to {
+    transform: scaleX(0.75) rotate(3deg);
+  }
 }
 
 .finbackbottom {
-    color: #002C9B;
-    transform-origin: 155px;
-    animation: fin-bottom 1s ease infinite alternate;
+  color: #002c9b;
+  transform-origin: 155px;
+  animation: fin-bottom 1s ease infinite alternate;
 }
 
 .finfrontbottom {
-    color: #002C9B;
-    transform-origin: 76px;
-    animation: fin-bottom 1s ease infinite alternate;
+  color: #002c9b;
+  transform-origin: 76px;
+  animation: fin-bottom 1s ease infinite alternate;
 }
 
 @keyframes fin-bottom {
-    from {
-        transform: rotate(-4deg) scaleY(0.98);
-    }
-    to {
-        transform: rotate(0deg) scaleY(1);
-    }
+  from {
+    transform: rotate(-4deg) scaleY(0.98);
+  }
+  to {
+    transform: rotate(0deg) scaleY(1);
+  }
 }
 
 .finfronttop {
-    color: #002C9B;
-    transform-origin: 80px;
-    animation: fin-front 1.5s ease infinite alternate;
+  color: #002c9b;
+  transform-origin: 80px;
+  animation: fin-front 1.5s ease infinite alternate;
 }
 @keyframes fin-front {
-    from {
-        transform: rotate(0deg) scaleX(1);
-    }
-    to {
-        transform: rotate(-8deg) scaleX(0.55);
-    }
+  from {
+    transform: rotate(0deg) scaleX(1);
+  }
+  to {
+    transform: rotate(-8deg) scaleX(0.55);
+  }
 }
 
 .findorsel {
-    color: #002C9B;
-    transform-origin: 80px;
-    animation: fin-top 1s ease infinite alternate;
-    transform: rotate(2deg) translate(2px, 3px);
+  color: #002c9b;
+  transform-origin: 80px;
+  animation: fin-top 1s ease infinite alternate;
+  transform: rotate(2deg) translate(2px, 3px);
 }
 .finbacktop {
-    color: #002C9B;
-    transform-origin: 145px;
-    animation: fin-top 1s ease infinite alternate;
+  color: #002c9b;
+  transform-origin: 145px;
+  animation: fin-top 1s ease infinite alternate;
 }
 
 @keyframes fin-top {
-    from {
-        transform: rotate(2deg) translate(2px, 3px);
-    }
-    to {
-        transform: rotate(0deg) translate(0px, 0px);
-    }
+  from {
+    transform: rotate(2deg) translate(2px, 3px);
+  }
+  to {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
 }
