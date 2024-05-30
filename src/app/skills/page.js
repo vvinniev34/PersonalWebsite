@@ -1,14 +1,34 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TertiaryHeader from "../components/headers/tertiaryheader";
 import { useInView } from "react-intersection-observer";
 import { languages, frameworks, tools, databases } from "./skillsList.js";
-import styles from "./page.module.css";
 
 const SkillsPage = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
+
+  const [animatedElements, setAnimatedElements] = useState([]);
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".dropIn");
+    setAnimatedElements(Array.from(elements));
+  }, []);
+
+  useEffect(() => {
+    if (inView) {
+      triggerSequentialAnimations();
+    }
+  }, [inView]);
+
+  const triggerSequentialAnimations = () => {
+    animatedElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("animate");
+      }, index * 500); // Adjust the delay as needed
+    });
+  };
 
   return (
     <section
@@ -44,7 +64,7 @@ const SkillsPage = () => {
                 className={`overflow-hidden`}
                 style={{ padding: "0.5rem", paddingBottom: "2rem" }}
               >
-                <div className={`${inView ? styles.dropIn1 : "opacity-0"}`}>
+                <div className={`${inView ? "" : "opacity-0"} dropIn`}>
                   <TertiaryHeader
                     title={"Languages"}
                     description={languages}
@@ -57,7 +77,7 @@ const SkillsPage = () => {
                 className={`overflow-hidden`}
                 style={{ padding: "0.5rem", paddingBottom: "2rem" }}
               >
-                <div className={`${inView ? styles.dropIn2 : "opacity-0"}`}>
+                <div className={`${inView ? "" : "opacity-0"} dropIn`}>
                   <TertiaryHeader
                     title={"Frameworks"}
                     description={frameworks}
@@ -70,7 +90,7 @@ const SkillsPage = () => {
                 className={`overflow-hidden`}
                 style={{ padding: "0.5rem", paddingBottom: "2rem" }}
               >
-                <div className={`${inView ? styles.dropIn3 : "opacity-0"}`}>
+                <div className={`${inView ? "" : "opacity-0"} dropIn`}>
                   <TertiaryHeader
                     title={"Tools"}
                     description={tools}
@@ -83,7 +103,7 @@ const SkillsPage = () => {
                 className={`overflow-hidden`}
                 style={{ padding: "0.5rem", paddingBottom: "2rem" }}
               >
-                <div className={`${inView ? styles.dropIn4 : "opacity-0"}`}>
+                <div className={`${inView ? "" : "opacity-0"} dropIn`}>
                   <TertiaryHeader
                     title={"Databases"}
                     description={databases}
