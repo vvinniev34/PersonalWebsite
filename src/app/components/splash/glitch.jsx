@@ -51,7 +51,7 @@ export default function Glitch() {
 
 	return (
 		<h2 
-			className="font-mono text-black hover:text-gray-500 text-lg sm:text-xl md:text-2xl" 
+			className="font-mono text-black hover:text-[#574e4e] text-lg sm:text-xl md:text-2xl" 
 			onClick={() => scrollDown()}
 			style={{cursor:"pointer"}}
 		>
