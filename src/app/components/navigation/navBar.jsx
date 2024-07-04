@@ -80,8 +80,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    // bg-white/80 backdrop-blur
-    <div className={`mobileSticky top-0 flex flex-wrap pt-4 md:pt-5 w-full ${windowWidth && windowWidth <= 640 ? "bg-lightblue/80 backdrop-blur" : "font-semibold"}`} style={{zIndex:55}}>
+    <div className={`animate-fade-in mobileSticky top-0 flex flex-wrap pt-4 md:pt-5 w-full ${windowWidth && windowWidth <= 640 ? "bg-lightblue/80 backdrop-blur" : "font-semibold"}`} style={{zIndex:55}}>
       <div className="sidebarLeftPadding sidebarRightPadding flex flex-wrap items-center w-full pb-4 md:pb-5">
         <div>
           <SmoothScrollLink
@@ -115,7 +114,7 @@ export default function Navbar() {
                 ) : ""
               })}
           </div> : windowWidth ? 
-          <div className='flex items-center justify-center fade_in ml-auto' onClick={() => setExpanded(!expanded)} ref={expandRef} >
+          <div className='flex items-center justify-center ml-auto' onClick={() => setExpanded(!expanded)} ref={expandRef} >
           {!expanded ? 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="w-8 h-8 stroke-white hover:stroke-lightblue hover:cursor-pointer">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -128,13 +127,13 @@ export default function Navbar() {
         </div> : ""}
         </div>
         {expanded && windowWidth < 640? 
-        <div className='w-full left-0 shadow-md pb-4' ref={dropdownRef} >
+        <div className='w-full left-0 shadow-md pb-2' ref={dropdownRef} >
             {menuItems.map((menuItem, i) => {
                 return i != 0 ? (
                   <div>
                     <SmoothScrollLink
                       linkKey={i}
-                      className={`py-2 px-8 font-medium block text-lg outline-offset-[-6px] flex items-center hover:bg-gray-100 cursor-pointer text-white`}
+                      className={`py-2 px-8 font-medium block text-lg outline-offset-[-6px] flex items-center hover:bg-sky-200 cursor-pointer text-white`}
                       href={`#${menuItem[1]}`}
                       targetId={menuItem[1]}
                     >

@@ -7,7 +7,7 @@ export default function Template({ children }) {
     <motion.div
     initial={{ opacity: 0, scale: 1 }}
     animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.8 }}>
+    transition={{ duration: 1 }}>
       {children}
     </motion.div>
   );
