@@ -120,25 +120,6 @@ const AboutPage = () => {
       }}
       id="about"
     >
-      <div className="mobileImageBackground">
-        <div
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(255,255,255,0) 20%, #0d2b52)",
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            zIndex: 1,
-          }}
-        />
-        <Image
-          src="/oceanunderwatersurface.png"
-          alt="ocean underwater surface"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
-      </div>
       <div className="flex space-y-20 w-full featuredRightPadding" style={{zIndex:25}}>
         <div className="mx-auto w-auto max-w-[100rem] rounded-md overflow-hidden flex flex-col items-center justify-center">
           {/*1 2 1*/}

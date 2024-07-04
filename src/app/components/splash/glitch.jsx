@@ -51,7 +51,7 @@ export default function Glitch() {
 
 	return (
 		<h2 
-			className="font-mono text-black hover:text-[#574e4e] text-lg sm:text-xl md:text-2xl" 
+			className="font-mono text-white hover:text-lightblue text-lg sm:text-xl md:text-2xl" 
 			onClick={() => scrollDown()}
 			style={{cursor:"pointer"}}
 		>
@@ -68,7 +68,7 @@ export function LearnMoreScroll() {
 		>	
 			<div className='pulse' style={{padding:"0.75rem", paddingTop:"0.25rem", paddingBottom:"0.25rem"}}>
 				<div 
-					className="flex flex-col items-center justify-center animate-fade-in font-mono text-black scrollHover text-xl"
+					className="flex flex-col items-center justify-center animate-fade-in font-mono text-white fill-white scrollHover text-xl"
 					style={{cursor:"pointer", maxHeight:"4rem"}}
 					onClick={() => scrollDown()}
 				>

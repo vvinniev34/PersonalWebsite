@@ -12,7 +12,7 @@ const GlowingCursorContainer = ( props ) => {
         const updateCursorPosition = (e) => {
             setCursorPosition({ x: e.clientX, y: e.clientY });
 
-            const skillsElement = document.getElementById('skills');
+            const skillsElement = document.getElementById('experience');
             const projectsElement = document.getElementById('projects');
 
             if (skillsElement && projectsElement) {
@@ -24,7 +24,7 @@ const GlowingCursorContainer = ( props ) => {
             }
         };
         const updateScrollPosition = () => {
-            const skillsElement = document.getElementById('skills');        
+            const skillsElement = document.getElementById('experience');        
             if (skillsElement) {                
                 const skillsPosition = skillsElement.getBoundingClientRect();
                 const isBetween = skillsPosition.top < window.innerHeight;

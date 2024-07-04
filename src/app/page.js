@@ -16,9 +16,9 @@ export default function Home() {
         <SideBar />
         <div className="overflow-auto mobileFeatureWidth">
           <AboutPage />
-
-          <ExperiencePage />
+          
           <GlowingCursorContainer>
+            <ExperiencePage />
             <SkillsPage />
 
             <ProjectPage />

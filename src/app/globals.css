@@ -160,8 +160,9 @@ body {
 }
 
 .scrollHover:hover {
-  color: #574e4e;
-  fill: #574e4e;
+  /* #574e4e*/
+  color: rgb(173 216 230/var(--tw-text-opacity)); 
+  fill: rgb(173 216 230/var(--tw-text-opacity));
   min-height: 5.25rem;
   max-height: 5.25rem;
   justify-content: space-between;
@@ -209,10 +210,10 @@ body {
 
 @keyframes pulse-animation {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 0px rgba(173, 216, 230, 0.15);
   }
   100% {
-    box-shadow: 0 0 0 18px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 18px rgba(173, 216, 230, 0);
   }
 }
 
@@ -250,7 +251,8 @@ body {
 }
 
 .featured {
-  background: linear-gradient(180deg, #0d2b52 0 40%, #0f0f0f 80%);
+  /* background: linear-gradient(180deg, #0d2b52 0 40%, #0f0f0f 80%); */
+  background: linear-gradient(180deg, #06487f, #0f0f0f 80%);
 }
 
 .fade_in {

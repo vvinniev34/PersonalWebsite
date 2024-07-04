@@ -80,16 +80,17 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="mobileSticky top-0 flex flex-wrap bg-white/80  pt-4 backdrop-blur md:pt-5 w-full" style={{zIndex:50}}>
+    // bg-white/80 backdrop-blur
+    <div className={`mobileSticky top-0 flex flex-wrap pt-4 md:pt-5 w-full ${windowWidth && windowWidth <= 640 ? "bg-lightblue/80 backdrop-blur" : "font-semibold"}`} style={{zIndex:55}}>
       <div className="sidebarLeftPadding sidebarRightPadding flex flex-wrap items-center w-full pb-4 md:pb-5">
         <div>
           <SmoothScrollLink
-            className="text-xl hover:text-black md:text-2xl text-black relative group"
+            className="text-2xl hover:text-lightblue md:text-3xl text-white relative group"
             href={`#/`}
             targetId={"/"}
           >
             {"VL"}
-            <span className="absolute inset-x-0 left-0 bottom-[-0.1rem] h-0.5 bg-black underline scale-x-0"></span>
+            <span className="absolute inset-x-0 left-0 bottom-[-0.1rem] h-0.5 bg-lightblue underline scale-x-0"></span>
           </SmoothScrollLink>
         </div>
         {windowWidth && windowWidth > 640 ?
@@ -99,16 +100,16 @@ export default function Navbar() {
                   <div key={i}>
                     <SmoothScrollLink
                       linkKey={i}
-                      className={`text-lg hover:text-black md:text-xl ${
+                      className={`text-xl hover:text-lightblue text-white md:text-2xl ${
                         menuItem[1] === activeSection
-                          ? 'font-extrabold text-black'
-                          : 'text-gray-600'
+                          ? 'font-extrabold'
+                          : ''
                       } relative group`}
                       href={`#${menuItem[1]}`}
                       targetId={menuItem[1]}
                     >
                       {menuItem[0]}
-                      <span className="absolute inset-x-0 left-0 bottom-[-0.1rem] h-0.5 bg-black underline scale-x-0"></span>
+                      <span className="absolute inset-x-0 left-0 bottom-[-0.1rem] h-0.5 bg-lightblue underline scale-x-0"></span>
                     </SmoothScrollLink>
                   </div>
                 ) : ""
@@ -116,24 +117,24 @@ export default function Navbar() {
           </div> : windowWidth ? 
           <div className='flex items-center justify-center fade_in ml-auto' onClick={() => setExpanded(!expanded)} ref={expandRef} >
           {!expanded ? 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="w-8 h-8 stroke-gray-600 hover:stroke-black hover:cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="w-8 h-8 stroke-white hover:stroke-lightblue hover:cursor-pointer">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
               </svg>
               :
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="w-8 h-8 stroke-gray-600 hover:stroke-black hover:cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" className="w-8 h-8 stroke-white hover:stroke-lightblue hover:cursor-pointer">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
               </svg> 
           }
         </div> : ""}
         </div>
         {expanded && windowWidth < 640? 
-        <div className='w-full left-0 shadow-md' ref={dropdownRef} >
+        <div className='w-full left-0 shadow-md pb-4' ref={dropdownRef} >
             {menuItems.map((menuItem, i) => {
                 return i != 0 ? (
                   <div>
                     <SmoothScrollLink
                       linkKey={i}
-                      className={`py-2 px-8 font-medium block text-lg outline-offset-[-6px] flex items-center hover:bg-gray-100 cursor-pointer text-gray-600`}
+                      className={`py-2 px-8 font-medium block text-lg outline-offset-[-6px] flex items-center hover:bg-gray-100 cursor-pointer text-white`}
                       href={`#${menuItem[1]}`}
                       targetId={menuItem[1]}
                     >

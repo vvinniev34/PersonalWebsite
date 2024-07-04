@@ -14,7 +14,7 @@ const projectsDescription = "A growing collection of my projects, past and ongoi
 const SideBar = () => {
     const menuItems = [["Home", "/"], ["About", "about"], ["Experience", "experience"], ["Skills", "skills"], ["Projects", "projects"]]
     const menuItemsReverseDict = {
-        "/": ["Home", aboutDescription],
+        "/": ["About", aboutDescription],
         "about": ["About", aboutDescription],
         "experience": ["Experience", experienceDescription],
         "skills": ["Skills", skillsDescription],
