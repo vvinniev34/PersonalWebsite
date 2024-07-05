@@ -2,6 +2,7 @@ import React from "react";
 import Particles from "./particles";
 import Glitch, { LearnMoreScroll } from "./glitch";
 import Image from "next/image";
+import SplashBackground from "./splashBackground";
 
 const Splash = () => {
   return (
@@ -22,8 +23,8 @@ const Splash = () => {
               zIndex: 1,
             }}
           />
+          <SplashBackground className="absolute h-full w-full"/>
           <Image
-            // src="/oceanunderwatersurface_gradient.jpeg"
             src="/oceanunderwatersurface.png"
             alt="ocean underwater surface"
             layout="fill"
