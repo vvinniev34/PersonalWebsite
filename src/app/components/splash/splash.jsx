@@ -9,8 +9,7 @@ const Splash = () => {
       id="/"
     >
       <div className="absolute w-full h-screen z-negative bg-[#06487f] sm:bg-transparent" style={{zIndex:-1}}>
-        <div className="hidden sm:block">
-
+        <div className="inset-0">
           <div
             style={{
               background:
