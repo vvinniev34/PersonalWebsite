@@ -1,6 +1,6 @@
 // "use client"
 // import { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import SplashBackgroundSVG from "./splashBackgroundSVG"
 
 export default function SplashBackground() {
@@ -13,7 +13,7 @@ export default function SplashBackground() {
   return (
     <>
         <SplashBackgroundSVG className="absolute h-full w-full"/>
-        <Image
+        {/* <Image
             src="/oceanunderwatersurface.png"
             alt="ocean underwater surface"
             layout="fill"
@@ -22,7 +22,7 @@ export default function SplashBackground() {
             // onLoad={handleImageLoad}
             // className={`transition-opacity duration-200 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
             className="hidden sm:block"
-        />
+        /> */}
     </>
   );
 }
