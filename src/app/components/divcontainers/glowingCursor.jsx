@@ -13,7 +13,8 @@ const GlowingCursorContainer = ( props ) => {
             setCursorPosition({ x: e.clientX, y: e.clientY });
 
             const skillsElement = document.getElementById('experience');
-            const projectsElement = document.getElementById('projects');
+            // const projectsElement = document.getElementById('projects');
+            const projectsElement = document.getElementById('footer');
 
             if (skillsElement && projectsElement) {
                 const skillsPosition = skillsElement.getBoundingClientRect();
