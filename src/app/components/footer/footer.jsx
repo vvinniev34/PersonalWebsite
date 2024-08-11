@@ -9,7 +9,6 @@ export default function Footer(){
             style={{ position:"relative"}}
             id="footer"
         >   
-            <div className="h-[2px] bg-darkgray rounded-lg relative" style={{ marginLeft:"5%", marginRight:"5%", width:"90%", zIndex: 50 }}/>
             <div className='sidebarLeftPadding sidebarRightPadding pb-5 relative' style={{ paddingTop:'3rem', zIndex: 50 }}>
                 <Contact/>
             </div>
