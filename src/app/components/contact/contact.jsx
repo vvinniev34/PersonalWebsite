@@ -26,10 +26,10 @@ const Contact = () => {
         <SubHeader 
             title="Contact"
             description={
-                <>
+                <div className='md:text-2xl'>
                     <div className='font-semibold'>Let's connect</div>
                     <div>Get in touch for opportunites or just to say hi! 👋</div>
-                    <div className="flex" style={{ width:"27rem", maxWidth:"fit-content", paddingTop:'1rem' }}>
+                    <div className="flex w-[27rem] md:w-[35rem]" style={{ maxWidth:"fit-content", paddingTop:'1rem' }}>
                         <div className="flex flex-col ">
                         <div className="flex m-5" style={{width:"90%"}}>
                             <div className={styles.contactSVG} onClick={handleGithubClick}>
@@ -94,7 +94,7 @@ const Contact = () => {
                         </div>
                         </div>
                     </div>
-              </>
+              </div>
             }
             color={"white"}
             descriptionColor={"white"}

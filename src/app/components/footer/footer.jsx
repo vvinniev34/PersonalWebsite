@@ -5,11 +5,11 @@ import styles from "./footer.module.css";
 export default function Footer(){
     return (
         <div 
-            className="w-[100%] bg-[#0f0f0f]" 
+            className="w-[100%] bg-[#0f0f0f] flex min-h-screen flex-col justify-between items-center relative" 
             style={{ position:"relative"}}
             id="footer"
         >   
-            <div className='sidebarLeftPadding sidebarRightPadding pb-5 relative' style={{ paddingTop:'3rem', zIndex: 50 }}>
+            <div className='sidebarLeftPadding sidebarRightPadding w-full relative flex items-center flex-1' style={{ paddingTop:'3rem', zIndex: 50 }}>
                 <Contact/>
             </div>
             <div 
