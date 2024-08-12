@@ -26,7 +26,7 @@ const SkillsPage = () => {
     animatedElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add("animate");
-      }, index * 500); // Adjust the delay as needed
+      }, index * 200); // Adjust the delay as needed
     });
   };
 
