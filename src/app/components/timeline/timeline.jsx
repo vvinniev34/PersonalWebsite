@@ -54,7 +54,7 @@ export default function Timeline(props) {
   return (
     <VerticalTimeline
       layout={"1-column-left"}
-      lineColor={"lightblue"}
+      lineColor={"white"}
       style={{ padding: "0" }}
     >
       {elements.map((element, i) => {

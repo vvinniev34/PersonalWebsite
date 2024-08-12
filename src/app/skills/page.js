@@ -52,7 +52,7 @@ const SkillsPage = () => {
           >
             <div
               ref={ref}
-              className={`w-[90%] flex flex-row flex-wrap justify-between overflow-hidden`}
+              className={`w-[90%] flex flex-row flex-wrap justify-between overflow-hidden border-t-[4px] border-white`}
               style={{
                 paddingTop: "1.25rem",
                 paddingBottom: "1.25rem",

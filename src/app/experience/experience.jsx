@@ -20,7 +20,7 @@ const ExperiencePage = () => {
         {
             title:"Software Engineer Intern",
             location:"McLean, VA",
-            description:"🕒 TBA",
+            description:"📨💼📞 Omnibus Messaging",
             time:"June 2024 - August 2024",
             img:"/experience/capital_one.jpeg"
         },
