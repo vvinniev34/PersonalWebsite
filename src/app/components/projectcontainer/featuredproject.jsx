@@ -19,6 +19,16 @@ export default function FeaturedProject () {
                     objectFit="cover" 
                     objectPosition="center"
                     style={{ position:'relative' }}
+                    className={styles.desktopImage}
+                />
+                <Image 
+                    src="/projects/layoffcrunch_frontpage_mobile.png" 
+                    alt="layoffcrunch mobile UI" 
+                    layout="fill" 
+                    objectFit="cover" 
+                    objectPosition="top"
+                    style={{ position:'relative' }}
+                    className={styles.mobileImage}
                 />
             </div>
             <div className={`${styles.projectDescriptionDiv} rounded-md`}>

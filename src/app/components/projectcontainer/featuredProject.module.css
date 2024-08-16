@@ -49,3 +49,21 @@
     right: 0%;
     pointer-events: none;
 }
+
+
+.mobileImage {
+    opacity: 0;
+    display: none;
+}
+
+@media only screen and (max-width: 468px) {
+    .desktopImage {
+        opacity: 0;
+        display: none;
+    }
+
+    .mobileImage {
+        opacity: 1;
+        display: block;
+    }
+}
