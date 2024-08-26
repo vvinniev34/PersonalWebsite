@@ -31,6 +31,14 @@ const projects = [
     }
   />,
   <ProjectContainer
+    title={"Thermostat SmartMod"}
+    image="/projects/thermostat.jpg"
+    color={"indianred"}
+    description={
+      <div>Attachable module to an existing conventional thermostat, upgrading it to a controllabel smart thermostat via a mobile device</div>
+    }
+  />,
+  <ProjectContainer
     title={"VoiceNotes"}
     image="/projects/voicenotes.jpg"
     color={"indianred"}
