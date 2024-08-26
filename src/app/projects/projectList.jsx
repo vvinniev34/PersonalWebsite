@@ -50,13 +50,23 @@ const projects = [
       </div>
     }
   />,
+  <ProjectContainer
+    title={"IMDb Personal Assistant"}
+    image="/projects/imdb.jpg"
+    color={"indianred"}
+    description={
+      <div>
+        Developed a movie recommendation system, providing personalized suggestions based upon user watch history and head-to-head picks
+      </div>
+    }
+  />,
 ];
 
 export default function ProjectCarousel() {
   return (
     <div className="w-[100%] flex items-center justify-center p-8 pb-0">
       <div className="overflow-hidden">
-        <SubHeader title={"Completed"} color={"#f6f7f2"} />
+        <SubHeader title={"Explore More"} color={"#f6f7f2"} />
         <div className="w-full rounded-lg shadow-lg">
           <Carousel projectList={projects} />
         </div>

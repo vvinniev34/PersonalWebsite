@@ -71,7 +71,7 @@ const ProjectPage = () => {
             style={{ paddingTop: 0, paddingBottom: "0.5rem" }}
           >
             <SubHeader title={"Featured"} color={"#f6f7f2"} />
-            <div className="py-4" ref={featuredProject}>
+            <div className="py-6" ref={featuredProject}>
               <FeaturedProject />
             </div>
           </div>
